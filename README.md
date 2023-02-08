@@ -1,7 +1,7 @@
 # Gitbash basic commands
 ___
 
-.. code:: 
+.. code:: python
 
   insertion test
 
