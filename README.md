@@ -1,5 +1,40 @@
-# <div style="text-align: center;"> Gitbash Commands </div> <div style="text-align: right;">
-<div style=text-align:right> <img src="https://cdn.worldvectorlogo.com/logos/git-bash.svg" width="15" height="15"> </div>
+<!DOCTYPE html>
+
+<style>
+div.container {
+background-color: #000000;
+}
+div.container p {
+text-align: center;
+font-family: Verdana;
+font-size: 20px;
+font-style: normal;
+font-weight: bold;
+text-decoration: none;
+text-transform: none;
+color: #FFBF00;
+background-color: ;
+}
+</style>
+
+<style type="text/css">
+.img { 
+    width:27px;
+    height:27px;
+    border-width:1px;
+    border-color:#FFBF00;
+    border-style:solid;
+    border-radius:px;
+    float:right;
+}
+ </style>
+
+<div class="container">
+<p> Gitbash  
+ <img href="https://git-scm.com/downloads" target="_self" src="https://cdn.worldvectorlogo.com/logos/git-bash.svg" alt="Gitbash" class="img"> </p>
+
+</div>
+
 
 ## <H2 align="center"> $\textcolor{orange}{\text{Contributing to Projects via Github}}$<br />
 
@@ -31,10 +66,8 @@ For more information about contributing to projects refer to official [documenta
 
 ### Commands:
 + Clone with HTTPS:
-|Command                                                  |Description                                               |
-|git clone [remote-repository-link                        |Right click on local folder → gitbash here → clone        |
-
-        git clone <github-repository-link>
+|Command |Description|
+|git clone <github-repository-link>|Right click on local folder → gitbash here →      AQUI-PAUSA  |
 
 
 *Note*: These are just some basic Gitbash commands and the list shouldn't be considered as complete. 
