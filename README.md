@@ -1,73 +1,59 @@
-<!DOCTYPE html>
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-<style>
-div.container {
-background-color: #000000;
-}
-div.container p {
-text-align: center;
-font-family: Verdana;
-font-size: 20px;
-font-style: normal;
-font-weight: bold;
-text-decoration: none;
-text-transform: none;
-color: #FFBF00;
-background-color: ;
-}
-</style>
+# Commands: Contributing to Projects via Github 
+---
+<br /> <br />
 
-<style type="text/css">
-.img { 
-    width:27px;
-    height:27px;
-    border-width:1px;
-    border-color:#FFBF00;
-    border-style:solid;
-    border-radius:px;
-    float:right;
-}
- </style>
+## Fork vs Clone:  
 
-<div class="container">
-<p> Gitbash  
- <img href="https://git-scm.com/downloads" target="_self" src="https://cdn.worldvectorlogo.com/logos/git-bash.svg" alt="Gitbash" class="img"> </p>
+<br />
 
-</div>
+### Contributions without permissions:
 
+-	**Fork**: Merge with original repo is possible with a pull request.
 
-## <H2 align="center"> $\textcolor{orange}{\text{Contributing to Projects via Github}}$<br />
+-	**Clone**: Merge with original repo is only achieved by pushing to fork and then a pull request.
 
-## <H4 align="left">  $\textcolor{lightgray}{\text{Fork vs Clone :}}$<br /><br />
+<br /> <br />
 
-$\textcolor{orange}{\text{Contributions without permissions}}$ </span>
+*Note:* It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the *user is NOT declared as contributor* 
 
--	 $\textcolor{green}{\text{Fork:}}$ Merge with original repo is possible with a pull request.
+<br />
 
--	$\textcolor{red}{\text{Clone:}}$ Merge with original repo is only achieved by pushing to fork and then a pull request.<br /><br />
-
-$\textcolor{gray}{\text{Note:}}$</span> It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the $\textcolor{lightblue}{\text{user is NOT declared as contributor}}$<br />
-General steps for contributions are the following:
+General steps for this type of contributions are the following:
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) repository.
 2. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) forked repository.
 3. Make Changes in Local.
 4. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote.
-5. [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) to Original Remote.<br /><br />
+5. [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) to Original Remote.
 
-<span style="color:green"> Contributions with permissions: </span><br />
-<span style="color:lightgray">*Note*:</span> It is a faster option to clone the original repository without a previous fork of the project if the $\textcolor{lightblue}{\text{user IS declared as contributor}}$:<br /> 
+<br /><br /><br />
+
+
+### Contributions with permissions:
+
+<br /> <br />
+
+*Note*: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as contributor*
+
+<br />
+
+General steps:
 1. [Clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 2. Make Changes in Local.
 3. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote. <br /><br />
 
 For more information about contributing to projects refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
 
-
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ### Commands:
 + Clone with HTTPS:
-|Command |Description|
-|git clone <github-repository-link>|Right click on local folder → gitbash here →      AQUI-PAUSA  |
+
+|Command|Description|
+|---|---|
+|DOP|Horizontal Dilution of precision|
+|FIX|GPS Fix Quality indicator: <ul style="list-style-type:none;"><li>0 - fix not available</li><li>1 - GPS fix</li></ul>|
 
 
 *Note*: These are just some basic Gitbash commands and the list shouldn't be considered as complete. 
