@@ -1,18 +1,17 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 # Git Commands and Contributions
----
-<br /> 
 
 ## Fork vs Clone:  
-
-### Contributions without permissions:
 
 -	**Fork**: Merge with original repo is possible with a pull request.
 
 -	**Clone**: Merge with original repo is only achieved by pushing to fork and then a pull request.
+---
 
-*Note:* It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the *user is NOT declared as contributor* 
+### Contributions without permissions:
+
+*Note:* It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the *user is NOT declared as contributor*.
 
 <br />
 
@@ -25,10 +24,11 @@ General steps for this type of contributions are the following:
 
 <br />
 
+---
 
 ### Contributions with permissions:
 
-*Note*: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as contributor*
+*Note*: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as contributor*.
 
 <br />
 
@@ -38,6 +38,8 @@ General steps:
 3. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote. <br /><br />
 
 For more information about contributing to projects refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
+
+---
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
@@ -51,8 +53,7 @@ For more information about contributing to projects refer to official [documenta
 |git branch -d <branch name>| Delete branch.|
 
 
-
-*Note*: These are just some basic Gitbash commands and the list shouldn't be considered as complete. 
+*Note*: The following are some common/useful git commands but the commands list isn't complete and variations don't consider all possible syntax constructions.
 
 ### Editor:
 + [EstebanMqz](https://github.com/EstebanMqz)
@@ -65,4 +66,5 @@ Contributions will be greatly appreciated!<br />
 
 ### References:
 
-+ [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
++ [git branch](https://git-scm.com/docs/git-branch)
++
