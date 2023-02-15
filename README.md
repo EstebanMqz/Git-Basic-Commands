@@ -1,20 +1,16 @@
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-# Commands: Contributing to Projects via Github 
+# Git Commands and Contributions
 ---
-<br /> <br />
+<br /> 
 
 ## Fork vs Clone:  
-
-<br />
 
 ### Contributions without permissions:
 
 -	**Fork**: Merge with original repo is possible with a pull request.
 
 -	**Clone**: Merge with original repo is only achieved by pushing to fork and then a pull request.
-
-<br /> <br />
 
 *Note:* It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the *user is NOT declared as contributor* 
 
@@ -27,12 +23,10 @@ General steps for this type of contributions are the following:
 4. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote.
 5. [Pull Request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request) to Original Remote.
 
-<br /><br /><br />
+<br />
 
 
 ### Contributions with permissions:
-
-<br /> <br />
 
 *Note*: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as contributor*
 
@@ -52,14 +46,16 @@ For more information about contributing to projects refer to official [documenta
 
 |Command|Description|
 |---|---|
-|DOP|Horizontal Dilution of precision|
-|FIX|GPS Fix Quality indicator: <ul style="list-style-type:none;"><li>0 - fix not available</li><li>1 - GPS fix</li></ul>|
+|git checkout -b <branch name>| Switch to branch (as it is named in Github).|
+|git checkout *master* | Switch to branch main.|
+|git branch -d <branch name>| Delete branch.|
+
 
 
 *Note*: These are just some basic Gitbash commands and the list shouldn't be considered as complete. 
 
 ### Editor:
-+ [@EstebanMqz](https://github.com/EstebanMqz)
++ [EstebanMqz](https://github.com/EstebanMqz)
 
 ### Contact:
 *For related more related inquiries feel free to ask me any questions!*<br />
