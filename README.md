@@ -48,8 +48,10 @@ For more information about contributing to projects refer to official [documenta
 
 |Command|Description|
 |---|---|
-|git checkout -b <branch name>| Switch to branch (as it is named in Github).|
-|git checkout *master* | Switch to branch main.|
+|git checkout <branch> | Switch to branch.|
+|git checkout -b <branch name> | Create a new branch and switch.|
+|git checkout -- <file name> | Discard changes on a file.|
+|git checkout - | Switch to last checkout.|
 |git branch -d <branch name>| Delete branch.|
 
 
@@ -66,5 +68,5 @@ Contributions will be greatly appreciated!<br />
 
 ### References:
 
++ [git checkout](https://git-scm.com/docs/git-checkout)
 + [git branch](https://git-scm.com/docs/git-branch)
-+
