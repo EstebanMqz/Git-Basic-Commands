@@ -44,20 +44,16 @@ For more information about contributing to projects refer to official [documenta
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ### Commands:
-+ Clone with HTTPS:
+*Note*: The following are some common/useful git commands. Refer to the basic command's documentation for more information.
 
-|Command|Description|
-|---|---|
-|git checkout <branch> | Switch to branch.|
-|git checkout -b <branch name> | Create a new branch and switch.|
-|git checkout -- <file name> | Discard changes on a file.|
-|git checkout - | Switch to last checkout.|
-|git branch -d <branch name>| Delete branch.|
+<br />
+
+|Basic|Command|Description|
+|---|---|---|
+|[checkout](https://git-scm.com/docs/git-checkout)|<ul style="list-style-type:none;"><li>git checkout `<branch name>`<li>git checkout -b `<branch name>`<li>git checkout -- `<file name>`<li>git checkout - <li>git checkout -d `<branch name>`|<ul style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Discard changes on a file.<li>Switch to last checkout.<li>Delete branch.|
 
 
-*Note*: The following are some common/useful git commands but the commands list isn't complete and variations don't consider all possible syntax constructions.
-
-### Editor:
+### Author:
 + [EstebanMqz](https://github.com/EstebanMqz)
 
 ### Contact:
