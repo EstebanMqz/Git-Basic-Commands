@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=black)
 
 # Git Commands and Contributions
 
@@ -37,32 +37,31 @@ General steps:
 2. Make Changes in Local.
 3. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote. <br /><br />
 
-For more information about contributing to projects refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
+For more information about contributing to projects in refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
 
 ---
 
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ### Commands:
-*Note*: The following are some common/useful git commands. Refer to the basic command's documentation for more information.
+*Note*: The following are some common or useful git commands. Refer to the basic command's documentation for more information.
 
 <br />
 
 |Basic|Command|Description|
 |---|---|---|
-|[checkout](https://git-scm.com/docs/git-checkout)|<ul style="list-style-type:none;"><li>git checkout `<branch name>`<li>git checkout -b `<branch name>`<li>git checkout -- `<file name>`<li>git checkout - <li>git checkout -d `<branch name>`|<ul style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Discard changes on a file.<li>Switch to last checkout.<li>Delete branch.|
+|[checkout](https://git-scm.com/docs/git-checkout)|<ul style="list-style-type:none;"><li>git checkout `<branch name>`<li>git checkout -b `<branch name>`<li> git checkout -b `<feature branch>` <li> git checkout -- `<file name>`<li>git checkout -|<ul style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Create a [feature branch](https://www.jetbrains.com/help/teamcity/working-with-feature-branches.html) to add new features.<li>Discard changes on a file.<li>Switch to last checkout.<li>|
+|[git branch](https://git-scm.com/docs/git-branch)|<ul style="list-style-type:none;"><li>git branch -d `<branch name>`<li>git branch `<branch name>`<li>git branch<li>git branch -a<li>git branch -f `<branch name>` `<feature_branch>`<li> git branch --show-current<li> git branch / grep -v `<branch name>` / xargs git branch -D <li> | <ul style="list-style-type:none;">Delete branch.<li>Create a branch and name it.<li>See local branches.<li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting for that branch (1 or more).|
 
 
 ### Author:
-+ [EstebanMqz](https://github.com/EstebanMqz)
+[EstebanMqz](https://github.com/EstebanMqz)
 
 ### Contact:
-*For related more related inquiries feel free to ask me any questions!*<br />
-Contributions will be greatly appreciated!<br />
+For more more related inquiries feel free to send me an [email](mailto:esteban@esteban).<br />
+Contributions are greatly appreciated!<br />
 
 
 
 ### References:
 
-+ [git checkout](https://git-scm.com/docs/git-checkout)
-+ [git branch](https://git-scm.com/docs/git-branch)
