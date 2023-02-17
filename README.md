@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=black)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=gray)
 
 # Git Commands and Contributions
 
@@ -11,7 +11,7 @@
 
 ### Contributions without permissions:
 
-*Note:* It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the *user is NOT declared as contributor*.
+*Note:* It is better to fork a repository before cloning it due to [copyrights](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository) when the *user is NOT declared as a contributor*.
 
 <br />
 
@@ -28,7 +28,7 @@ General steps for this type of contributions are the following:
 
 ### Contributions with permissions:
 
-*Note*: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as contributor*.
+*Note*: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as a contributor*.
 
 <br />
 
@@ -37,7 +37,7 @@ General steps:
 2. Make Changes in Local.
 3. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote. <br /><br />
 
-For more information about contributing to projects in refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
+For more information about contributing to projects refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
 
 ---
 
@@ -50,18 +50,14 @@ For more information about contributing to projects in refer to official [docume
 
 |Basic|Command|Description|
 |---|---|---|
-|[checkout](https://git-scm.com/docs/git-checkout)|<ul style="list-style-type:none;"><li>git checkout `<branch name>`<li>git checkout -b `<branch name>`<li> git checkout -b `<feature branch>` <li> git checkout -- `<file name>`<li>git checkout -|<ul style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Create a [feature branch](https://www.jetbrains.com/help/teamcity/working-with-feature-branches.html) to add new features.<li>Discard changes on a file.<li>Switch to last checkout.<li>|
-|[git branch](https://git-scm.com/docs/git-branch)|<ul style="list-style-type:none;"><li>git branch -d `<branch name>`<li>git branch `<branch name>`<li>git branch<li>git branch -a<li>git branch -f `<branch name>` `<feature_branch>`<li> git branch --show-current<li> git branch / grep -v `<branch name>` / xargs git branch -D <li> | <ul style="list-style-type:none;">Delete branch.<li>Create a branch and name it.<li>See local branches.<li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting for that branch (1 or more).|
-
+|[checkout](https://git-scm.com/docs/git-checkout)|<ol style="list-style-type:none;"><li>git checkout `<branch>`<li>git checkout -b `<branch>`<li> git checkout -b `<feature>` <li> git checkout -b `<branch>` `<origin/branch>` <li> git checkout -- `<file>`<li>git checkout -<li> git checkout `<branch>~3 <file>`|<ol style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Create feature branch.<li>Clone a remote branch and switch to it.<li>Discard changes on a file.<li>Switch to last checkout. <li> Reverts file on branch, 3 (any) commits back[¹](https://linux.die.net/man/1/git-checkout).|
+|[branch](https://git-scm.com/docs/git-branch)|<ol style="list-style-type:none;"><li>git branch <li>git branch `<branch>`<li>git branch -d `<branch>`<li>git branch -a<li>git branch -f `<branch>` `<feature>`<li> git branch --show-current<li> git branch / grep -v `<branch>` / xargs git branch -D|<ol style="list-style-type:none;"><li>See local branches.<li>Create a branch and name it.<li>Delete branch.<li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting selected.|
 
 ### Author:
 [EstebanMqz](https://github.com/EstebanMqz)
 
 ### Contact:
-For more more related inquiries feel free to send me an [email](mailto:esteban@esteban).<br />
+For more related inquiries feel free to send me an [email](mailto:esteban@esteban).<br />
 Contributions are greatly appreciated!<br />
 
-
-
 ### References:
-
