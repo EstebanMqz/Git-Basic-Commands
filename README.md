@@ -37,7 +37,7 @@ General steps:
 2. Make Changes in Local.
 3. [Push](https://docs.github.com/en/get-started/using-git/pushing-commits-to-a-remote-repository) to Personal Remote. <br /><br />
 
-For more information about contributing to projects refer to official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
+For more information about contributing to projects with Github refer to its official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui). <br />
 
 ---
 
@@ -50,14 +50,18 @@ For more information about contributing to projects refer to official [documenta
 
 |Basic|Command|Description|
 |---|---|---|
-|[checkout](https://git-scm.com/docs/git-checkout)|<ol style="list-style-type:none;"><li>git checkout `<branch>`<li>git checkout -b `<branch>`<li> git checkout -b `<feature>` <li> git checkout -b `<branch>` `<origin/branch>` <li> git checkout -- `<file>`<li>git checkout -<li> git checkout `<branch>~3 <file>`|<ol style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Create feature branch.<li>Clone a remote branch and switch to it.<li>Discard changes on a file.<li>Switch to last checkout. <li> Reverts file on branch, 3 (any) commits back[¹](https://linux.die.net/man/1/git-checkout).|
-|[branch](https://git-scm.com/docs/git-branch)|<ol style="list-style-type:none;"><li>git branch <li>git branch `<branch>`<li>git branch -d `<branch>`<li>git branch -a<li>git branch -f `<branch>` `<feature>`<li> git branch --show-current<li> git branch / grep -v `<branch>` / xargs git branch -D|<ol style="list-style-type:none;"><li>See local branches.<li>Create a branch and name it.<li>Delete branch.<li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting selected.|
+|[checkout](https://git-scm.com/docs/git-checkout)|<ol style="list-style-type:none;"><li>git checkout `<branch>`<li>git checkout -b `<branch>`<li> git checkout -b `<feature>` <li> git checkout -b `<branch>` `<origin/branch>` <li> git checkout -- `<file>`<li>git checkout -<li> git checkout `<branch>~3 <file>`|<ol style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Create feature branch.<li>Clone a remote branch and switch to it.<li>Discard changes on a file.<li>Switch to last checkout. <li> Reverts file on branch, 3 commits back[¹](https://linux.die.net/man/1/git-checkout).|
+|[branch](https://git-scm.com/docs/git-branch)|<ol style="list-style-type:none;"><li>git branch <li>git branch `<branch>`<li>git branch -d `<branch>`<li>git branch -D `<branch>`<li>git branch -a<li>git branch -f `<branch>` `<feature>`<li> git branch --show-current<li> git branch / grep -v `<branch(es)>` / xargs git branch -D|<ol style="list-style-type:none;"><li>See local branches.<li>Create a branch and name it.<li>Delete an unmerged branch upstream.<li>Delete a merged or unmerged branch. <li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting selected[²](https://linux.die.net/man/1/git-branch.)|
+|[push](https://git-scm.com/docs/git-push)|
 
 ### Author:
 [EstebanMqz](https://github.com/EstebanMqz)
 
 ### Contact:
-For more related inquiries feel free to send me an [email](mailto:esteban@esteban).<br />
+Feel free to send me an [email](mailto:esteban@esteban) if you have any questions.<br />
 Contributions are greatly appreciated!<br />
 
-### References:
+### See Also:
+[Linux Man](https://linux.die.net)<br />
+[Git Documentation](https://git-scm.com/doc)
+
