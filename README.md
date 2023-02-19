@@ -44,15 +44,16 @@ For more information about contributing to projects with Github refer to its off
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ### Commands:
-*Note*: The following are some common or useful git commands. Refer to the basic command's documentation for more information.
+*Note*: The following are some common git commands. <br />
+Refer to provided documentation for more information.
 
 <br />
 
 |Basic|Command|Description|
 |---|---|---|
 |[checkout](https://git-scm.com/docs/git-checkout)|<ol style="list-style-type:none;"><li>git checkout `<branch>`<li>git checkout -b `<branch>`<li> git checkout -b `<feature>` <li> git checkout -b `<branch>` `<origin/branch>` <li> git checkout -- `<file>`<li>git checkout -<li> git checkout `<branch>~3 <file>`|<ol style="list-style-type:none;"><li>Switch to branch.<li>Create a new branch and switch.<li>Create feature branch.<li>Clone a remote branch and switch to it.<li>Discard changes on a file.<li>Switch to last checkout. <li> Reverts file on branch, 3 commits back[¹](https://linux.die.net/man/1/git-checkout).|
-|[branch](https://git-scm.com/docs/git-branch)|<ol style="list-style-type:none;"><li>git branch <li>git branch `<branch>`<li>git branch -d `<branch>`<li>git branch -D `<branch>`<li>git branch -a<li>git branch -f `<branch>` `<feature>`<li> git branch --show-current<li> git branch / grep -v `<branch(es)>` / xargs git branch -D|<ol style="list-style-type:none;"><li>See local branches.<li>Create a branch and name it.<li>Delete an unmerged branch upstream.<li>Delete a merged or unmerged branch. <li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting selected[²](https://linux.die.net/man/1/git-branch.)|
-|[push](https://git-scm.com/docs/git-push)|
+|[branch](https://git-scm.com/docs/git-branch)|<ol style="list-style-type:none;"><li>git branch <li>git branch `<branch>`<li>git branch -d `<branch>`<li>git branch -D `<branch>`<li>git branch -a<li>git branch -f `<branch>` `<feature>`<li> git branch --show-current<li> git branch / grep -v `<branch(es)>` / xargs git branch -D|<ol style="list-style-type:none;"><li>See local branches.<li>Create a branch and name it.<li>Delete an unmerged branch upstream.<li>Delete a merged or unmerged branch. <li>See local and remote branches.<li>Rewrite local branch with feature branch.<li>Show current local branch.<li>Delete all branches excepting selected[²](https://linux.die.net/man/1/git-branch.).|
+|[push](https://git-scm.com/docs/git-push)|<ol style="list-style-type:none;"><li>git push<li>git push -u `<origin main>`<li>git push --set-upstream `<origin main>`<li>git push --all<li>git push origin --delete `<branch>`<li> git push --force <li> git push --force-with-lease <li> git push --prune `<origin refs/heads/*>` <li> git push --mirror<li>|<ol style="list-style-type:none;"><li>Push commits to upstream. <li>Push commits and set as upstream.<li>Push commits and set it as upstream too.<li>Pushes all the branches to upstream.<li>Delete a remote branch.<li>Push commits and destroy unmerged changes.<li>Push commits and destroys personal unmerged changes.<li>Remove remote branches without local counterpart.<li> Overwrite remote with local branches, refs and attributes[³](https://linux.die.net/man/1/git-push).|
 
 ### Author:
 [EstebanMqz](https://github.com/EstebanMqz)
