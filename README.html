@@ -139,8 +139,8 @@
 <hr>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/ec0d32e85caf4723d5182a75338c89f85a2c3679aed0c46c9ee9fd1c8dc2a316/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d2532334630353033332e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465"><img src="https://camo.githubusercontent.com/ec0d32e85caf4723d5182a75338c89f85a2c3679aed0c46c9ee9fd1c8dc2a316/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d2532334630353033332e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465" alt="Git" data-canonical-src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white" style="max-width: 100%;"></a></p>
 <h1><a id="user-content-git-commands" class="anchor" aria-hidden="true" href="#git-commands"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Commands:</h1>
-<p><em>Note</em>: The following is a list of some common git commands but many more syntax options are avaliable. <br>
-Refer to git documentation from the <em>basic</em> command to view all available options.</p>
+<p><em>Note</em>: The following is a list of common git commands but many more syntax options are avaliable. <br>
+Refer to the official git documentation to view all available options.</p>
 <br>
 <table>
 <thead>
@@ -169,11 +169,11 @@ Refer to git documentation from the <em>basic</em> command to view all available
 <td><ol>
 <li>Switch to branch.</li>
 <li>Create a new branch and switch.</li>
-<li>Create feature branch.</li>
-<li>Clone a remote branch and switch to it.</li>
+<li>Create a feature branch.</li>
+<li>Clone a remote branch and switch.</li>
 <li>Discard changes on a file.</li>
 <li>Switch to last checkout. </li>
-<li> Reverts file on branch, 3 commits back.</li>
+<li> Reverts file on branch 3 commits back.</li>
 </ol></td>
 </tr>
 <tr>
@@ -224,13 +224,13 @@ Refer to git documentation from the <em>basic</em> command to view all available
 <td><ol>
 <li>Push commits to upstream. </li>
 <li>Push commits and set as upstream.</li>
-<li>Push commits and set it as upstream too.</li>
-<li>Pushes all the branches to upstream.</li>
+<li>Push commits and set as upstream (too).</li>
+<li>Pushes all  branches to upstream.</li>
 <li>Delete a remote branch.</li>
 <li>Push commits and destroy unmerged changes.</li>
-<li>Push commits and destroys personal unmerged changes.</li>
-<li>Remove remote branches without local counterpart.</li>
-<li> Overwrite remote with local branches, refs and attributes.</li>
+<li>Push commits and only destroys personal unmerged changes.</li>
+<li>Remove remote branches that don't have a local counterpart.</li>
+<li> Overwrite remote with local branches, refs. and attributes.</li>
 </ol></td>
 </tr>
 <tr>
@@ -251,14 +251,32 @@ Refer to git documentation from the <em>basic</em> command to view all available
 <li>Fetch the specified branch in the repository.</li>
 <li>Fetches all the branches from the upstream.</li>
 <li>Show output without executing the fetch.</li>
-<li> Without this option, old data in .git/FETCH_HEAD would be overwritten.</li>
+<li> Fetch without overwriting data in .git/FETCH_HEAD.</li>
 <li> Limit fetching to a commit number from the tip.</li>
 </ol></td>
 </tr>
 <tr>
 <td><a href="https://git-scm.com/docs/git-diff" rel="nofollow">diff</a></td>
-<td><ol><li>git diff</li></ol></td>
-<td><ol><li>Check for differences between fetched local and upstream branches.</li></ol></td>
+<td><ol>
+<li>git diff</li>
+<li>git diff --staged</li>
+<li> git diff HEAD</li>
+<li> git diff --color-words</li>
+<li>git commit <code>&lt;ID 1&gt; &lt;ID 2&gt;</code>
+</li>
+<li> git diff <code>&lt;branch_1&gt; &lt;branch_2&gt; &lt;file&gt;</code> </li>
+<li> git diff <code>&lt;ID 1&gt; &lt;ID 2&gt; &lt;file&gt;</code>
+</li>
+</ol></td>
+<td><ol>
+<li>Check for differences between fetched local and upstream branches.</li>
+<li> Check for differences between staged and local repositories.</li>
+<li>Check for differences between working dir. and last commit in remote.</li>
+<li> Highlight changes with a better color granularity. </li>
+<li> Check for differences between two commits in a repository (git log for ID).</li>
+<li>Check for differences between two branches in repository.</li>
+<li>Check for differences in a file between two commits.</li>
+</ol></td>
 </tr>
 <tr>
 <td><a href="https://git-scm.com/docs/git-config" rel="nofollow">config</a></td>
@@ -275,13 +293,25 @@ Refer to git documentation from the <em>basic</em> command to view all available
 <li>git config --global fetch.prune true</li>
 </ol></td>
 <td><ol>
-<li>Display global config for .git file. Create it if none is found.</li>
+<li>Display global config for .git file and create it if none is found.</li>
 <li>Sets author name to commits, accesible to all users and projects.</li>
 <li> Sets author email to commits, accesible to all users and projects.</li>
 <li>Set author name for all git users in system config.</li>
 <li> Show author or email (<code>user.email</code>, <code>--system user.name</code> or <code>--system user.email</code>).</li>
-<li>Set automatic prune with git fetch/pull (to clean inactive remote-tracking branches).</li>
+<li>Set automatic prune with git fetch/pull to clean inactive remote-tracking branches).</li>
 <li>Set automatic prune only with git fetch.</li>
+</ol></td>
+</tr>
+<tr>
+<td><a href="https://git-scm.com/docs/git-log" rel="nofollow">log</a></td>
+<td><ol>
+<li>git log --pretty=oneline</li>
+<li>git log -p --follow -- <code>&lt;file&gt;</code>
+</li>
+</ol></td>
+<td><ol>
+<li>Show IDs from commits.</li>
+<li>Show all commits done on a specific file.</li>
 </ol></td>
 </tr>
 </tbody>
