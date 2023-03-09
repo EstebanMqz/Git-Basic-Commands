@@ -59,19 +59,21 @@ The following is a list of common git commands and options with random tags but 
 |[10.push](https://git-scm.com/docs/git-push)|<ol style="list-style-type:none;"><li>git push<li>git push -u `<origin> <branch>`<li>git push --all<li>git push `<origin>` --delete `<branch>`<li> git push --force <li> git push --force-with-lease <li> git push --prune `<origin refs/heads/*>` <li> git push --mirror|<ol style="list-style-type:none;"><li>**Push** *commits*. <li>**Push** *commits* and set as ***upstream***.<li>**Push** ***all*** *commits*.<li> **Delete** ***remote-tracking*** branch.<li>**Push** commits and ***destroy all unmerged*** changes.<li>**Push** and ***destroy personal unmerged*** changes.<li>**Remove** ***remote*** *without local counterpart*.<li> **Overwrite** ***remote*** *with* ***local*** branches.|
 |[11.pull request](https://git-scm.com/docs/git-request-pull)|<ol style="list-style-type:none;"><li>git request-pull `<branch> <URL> <feature>`|<ol style="list-style-type:none;"><li>**Pull request** for changes between tag and feature.|
 |[12. branch](https://git-scm.com/docs/git-branch)|<ol style="list-style-type:none;"><li>git branch <li>git branch -r <li>git branch -a <li>git branch `<branch>`<li> git branch -d `<branch>`<li>git branch -D `<branch>`<li>git branch -f `<branch>` `<feature>`<li> git branch --show-current<li>git branch --set-upstream-to<li> git branch / grep -v `<branch(es)>` / xargs git branch -D|<ol style="list-style-type:none;"><li>**See** ***local*** branches.<li>**See** ***remote*** *branches*.<li>**See** ***local and remote*** *branches*. <li> **Create** ***branch*** and *name it*.<li>**Delete** ***unmerged*** branch.<li>**Delete** ***merged*** & ***unmerged*** branches.<li>**Rewrite** local ***branch*** with ***feature*** branch.<li>**Show** ***current*** branch in local.<li>Make an existing git branch **track** a ***remote***.<li>**Delete** ***all*** branches *excepting* selected.|
-|[13. diff](https://git-scm.com/docs/git-diff)|<ol style="list-style-type:none;"><li>git diff<li>git diff --staged<li> git diff HEAD<li> git diff --color-words<li> git diff `<branch> <feature> <file>` <li> git diff `<commit_id> <commit_id> <file>`<li> git diff --stats<li> git diff-files|<ol style="list-style-type:none;"><li>**Check** for **differences** in ***local*** & ***remote-tracking***.<li>**Check** for **differences** in ***local*** & ***staged*** changes.<li>**Check** for **differences** in ***work dir.*** & ***last commit***.<li> **Highlight** ***changes*** with *color* granularity. <li>**Check** for **differences** in a file between ***two branches***.<li>**Check** for **differences** in a file between ***two commits***.<li>**Show** ***insertions*** & ***deletions*** in *staged* and *local*.<li> **Compare** ***files*** in the *working tree*[²](https://linux.die.net/man/1/git-diff-files).|
+|[13. diff](https://git-scm.com/docs/git-diff)|<ol style="list-style-type:none;"><li>git diff<li>git diff --staged<li> git diff HEAD<li> git diff --color-words<li> git diff `<branch> <feature> <file>` <li> git diff `<commit_id> <commit_id> <file>`<li> git diff --stats<li> git diff-files<li>git diff stash@{n} `<branch>`|<ol style="list-style-type:none;"><li>**Check** for **differences** in ***local*** & ***remote-tracking***.<li>**Check** for **differences** in ***local*** & ***staged*** changes.<li>**Check** for **differences** in ***work dir.*** & ***last commit***.<li> **Highlight** ***changes*** with *color* granularity. <li>**Check** for **differences** in a file between ***two branches***.<li>**Check** for **differences** in a file between ***two commits***.<li>**Show** ***insertions*** & ***deletions*** in *staged* and *local*.<li> **Compare** ***files*** in the *working tree*[²](https://linux.die.net/man/1/git-diff-files).<li> **Compare stash** ***n*** with *branch*.|
 |[14. log](https://git-scm.com/docs/git-log)|<ol style="list-style-type:none;"><li>git log -n<li>git log --oneline<li>git log -p --follow -- `<file>` <li> git log --oneline --decorate<li> git log --stats<li>git shortlog<li>git log --pretty=format:"%cn committed %h on %cd"<li>git log --after=`<yyyy-m-d>` --before=`<yyyy-m-d>`<li>git log --author=`<username>`|<ol style="list-style-type:none;"><li>**Display** ***logs*** from last 1,2,..*n* commits.<li>**Show** ***IDs*** from commits.<li>**Show** ***commits*** on a *file*.<li>**Display** ***commits***~***branches***.<li>**Show** ***insertions*** & ***deletions***.<li>**Display**  ***commits*** *first coding line* by author.<li>**Customized log** (*show author, hash & date*).<li>**Search** for ***commits*** in *range*.<li>**Search** for ***commits*** by *author*.|
 |[15. revert](https://git-scm.com/docs/git-revert)|<ol style="list-style-type:none;"><li>git revert `<commit_id>`<li>git revert `<commit_id>` --no-edit<li>git revert -n `<commit_id>`<li>git revert -n `<HEAD>~n`<li>git revert -n `<HEAD>~n`..`<HEAD>~m`|<ol style="list-style-type:none;"><li>**Invert commit** & ***commit*** *undone changes*.<li>**Reverts** *without* a new ***commit msg***.<li>**Invert** ***changes*** & ***stage*** *only*.<li>**Revert** ***n commits***.<li>**Revert** from ***n→m commits*** *[n,m]*.|
 |[16. reset](https://git-scm.com/docs/git-reset)|<ol style="list-style-type:none;"><li>git reset `<file>`<li> git reset --mixed `<HEAD>~n`<li>git reset --mixed `<commit-id>`<li>git reset --hard `<HEAD>~n` <li>git reset --soft `<HEAD>~n`<li>git reset -p|<ol style="list-style-type:none;"><li>**Untrack** ***file***.<li>**Unmerge** & **uncommit** but ***don't unstage*** *(default)*.<li>**Mixed** with ***commit hash*** *(default)*.<li>**Undo** all ***n*** *changes*.<li>**Hard reset** but able to ***recover*** *changes* with ***git commit***.<li>**Patch interactively** (***git add -p*** *inverse*).|
+|[17. stash](https://git-scm.com/docs/git-stash)|<ol style="list-style-type:none;"><li> git stash<li> git stash push -m `<msg>`<li>git stash list<li> git stash list --stat<li>git stash apply<li>git stash pop -n<li> git stash drop -n|<ol style="list-style-type:none;"><li>**Saves work dir.** from ***local*** & *hard reset*.<li>**Saves work dir.** from local ***with msg*** & *hard reset*.<li>**List** ***stashed*** changes as an *index [*n*]*<li>**Show summary** of ***changes*** in *stash list* <li> **Recover** ***stash[0]*** from *work dir*.<li>**Recover** ***stash n*** & *delete it* from *stash* list.<li>**Delete** ***stash n*** from *stash list*. 
 
-***Note***: Remember to call branches by their names in your commands (*git branch -a*). <br> 
+
+***Note***: Remember to call branches by their names in your commands (*see 12. branch*). <br> 
 *Tip:* `<main>` is the default name for remote repositories as `<master>` is for local. <br>
 
 ---
 ### **Definitions**:
 **origin**: Primary ***working dir.*** of ***remote*** repositories by ***default***.<br>
 **fetch**: Fetch is the ***safe*** version of ***pull*** because local ***files aren't merged*** until they are reviewed, checked out & merged.<br>
-***revert***: Revert is ***safer*** than doing git ***reset***, checkout to *discard* (4-6), etc. This is because commit ***history isn't erased*** but a new inverted commit is appended.<br>
+**revert**: Revert is ***safer*** than doing git ***reset***, checkout to *discard* (4-6), etc. This is because commit ***history isn't erased*** but a new inverted commit is appended.<br>
 **feature**: Feature represents a ***branch of developments*** in progress with their descriptions. 
 
 
@@ -89,7 +91,6 @@ Contributions are greatly appreciated!<br />
 ---
 
 ### **Pending Commands:** <br /> <br />
-+ **git stash** ~ *pending*
 + **git restore** ~ *pending*
 + **git status** ~ *pending*
 + **git remote** ~ *pending*
@@ -151,7 +152,7 @@ Contributions are greatly appreciated!<br />
 + **etckeeper** ~ *pending*
 + **perlbrew** ~ *pending*
 + **guilt** ~ *pending*
-+ **touch** ~ Create a new empty file with ita extension.
++ **touch** ~ Create a new empty file with a extension.
 
 
 ### *Other Commands*: 
