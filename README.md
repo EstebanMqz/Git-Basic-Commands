@@ -41,7 +41,7 @@
 
 # **Git Commands** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
 The following is a list of git commands with common options and tags but many more are avaliable.<br>
-*Refer to documentation for more information.*
+*Refer to their documentation for more information.*
 
 <br/> 
 
@@ -71,12 +71,10 @@ The following is a list of git commands with common options and tags but many mo
 |[22. cd](https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/command-line-101)|<ol style="list-style-type:none;"><li> cd ~/`<home>`<li>cd ~/`<home>`/`<dir.>`<li>cd ~/`<home>`/`<dir.>`/`<subdir.>`|<ol style="list-style-type:none;"><li> **Change dir.** to ***home***  *(e.g ~/Desktop)*<li>**Change dir.** to a ***folder*** in *home*.<li>**Change dir.** to n ***sub-folders*** in *home*.|  
 |[23. ls](https://linux.die.net/man/1/git-ls-files)|<ol style="list-style-type:none;"><li>ls <li>ls -la|<ol style="list-style-type:none;"><li>**List subfolders** in ***dir***. <li>**List subfolders** in ***dir*** with *hidden files*.|
 |[24. rm](https://git-scm.com/docs/git-rm)|<ol style="list-style-type:none;"><li>git rm `<file>`<li>rm `<file>`|<ol style="list-style-type:none;"><li>**Remove file** from ***git tracking*** & ***local***.<li>**Remove file** from ***local*** *only*.
-|[25. mv](https://git-scm.com/docs/git-mv)|<ol style="list-style-type:none;"><li>git mv `<file.ext>` `<new-filename.ext>`<li> git mv `<file.ext>` ~/`<home>`/`<dir.>`/`<subdir.>`|<ol style="list-style-type:none;"><li>**Rename file** with the same ***extension***.<li>**Move file** from dir-1 to subdir. (inside dir-1)
-
-
-
-
-
+|[25. mv](https://git-scm.com/docs/git-mv)|<ol style="list-style-type:none;"><li>git mv `<file.ext>` `<new-filename.ext>`<li> git mv `<file.ext>` ~/`<home>`/`<dir.1>`/`<subdir.>`|<ol style="list-style-type:none;"><li>**Rename file** with the same ***extension***.<li>**Move file** from dir.1 to subdir. (inside dir.1)
+|[26. mkdir](https://linux.die.net/man/1/mkdir)|<ol style="list-style-type:none;"><li>git mkdir ~/`<home>`/`<dir.>`/`<subdir.>/<new_dir.>`|<ol style="list-style-type:none;"><li>**Create dir.** ***in path***.
+|[27. remote](https://git-scm.com/docs/git-remote)|<ol style="list-style-type:none;"><li>git remote<li> git remote -v<LI> git remote rename `<old-name> <new-name>`<li>git remote add `<URL>`|<ol style="list-style-type:none;"><li>**List** ***remote*** *branches*.<li>**List** ***remote*** *branches* with *URL*.<LI>**Rename** ***remote***.<li>**Connection** with ***repo*** with *URL*.|
+|[28. gitk](https://linux.die.net/man/1/gitk)|<ol style="list-style-type:none;"><li> gitk<li> gitk HEAD...FETCH_HEAD|<ol style="list-style-type:none;"><li>**Show Git GUI** for ***commits***.<li> **Show Git GUI** for all users since last push.
 
 
 ***Note***: Remember to call branches by their names in your commands (*see 13. branch*). <br> 
@@ -102,22 +100,18 @@ Feel free to send me an [email](mailto:esteban@esteban) if you have any question
 Contributions are greatly appreciated!<br />
 
 ---
-
-### **Pending Commands:** <br /> <br />
-
-+ **git remote** ~ *pending*
-+ **git rev-parse** ~ *pending*
-+ **git describe** ~ *pending*
-+ **gitrevisions** ~ *pending*
-+ **gitattributes** ~ *pending*
-+ **git ls-files** ~ *pending*
-+ **git am** ~ *pending*
-+ **git mk** ~ *pending*
-+ **git cd** ~ *pending*
-+ **git bisect** ~ *pending*
-+ **git archive** ~ *pending*
-+ **git reflog** ~ List of changes to refs. in local repo.
-+ **git mergetool** ~ *pending*
+***Note***: If you are interested in learning more about git commands try to do your own research, more are available.
+### **Other Commands:** <br /> <br />
++ **[git rev-parse](https://git-scm.com/docs/git-rev-parse)** ~ Ancillary plumbing command primarily used for manipulation.
++ **[git describe](https://git-scm.com/docs/git-describe)** ~ Describe specific commits with their hash.
++ **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches and applies them to branch.
++ **[git bisect](https://git-scm.com/docs/git-bisect)** ~ Binary search algorithm to find commit in project history which caused a bug.
++ **[git archive](https://git-scm.com/docs/git-archive)** ~ Combine multiple files in a single file but removes git data.
++ **[git reflog](https://git-scm.com/docs/git-reflog)** ~ List of changes to refs. in local repo.
++ **[git mergetool](https://git-scm.com/docs/git-mergetool)** ~ Used to resolve merge conflicts after merging.
++ **[git version](https://git-scm.com/docs/git-version)** ~ Show current version of git without more available options.
++ **[git instaweb](https://git-scm.com/docs/git-instaweb)** ~ Browse your local working repository in a web server.
++ **[git fast-import](https://git-scm.com/docs/git-fast-import)** ~ Import large projects min. memory (100k+ commits on avg PC in 1h).
 + **git remote-helpers** ~ *pending*
 + **git filter-branch** ~ *pending*
 + **git submodule** ~ *pending*
@@ -157,17 +151,6 @@ Contributions are greatly appreciated!<br />
 + **pass** ~ *pending*
 + **mr** ~ *pending*
 + **cg** ~ *pending*
-+ **rpkg** ~ *pending*
-
-
-
-### *Other Commands*: 
-+ **git k** ~ Show graphical representation of commits.
-+ **git k HEAD...FETCH_HEAD** ~ Show everything that is reachable for users.
-+ **git --version** ~ Show current version of git.
-+ **git instaweb** ~ Setup web server bound to local IP.
-+ **git frontend | git fast-import**: Import large projects in a minimum amount of memory (100k+ commits on $2k PC in 1h).
-+$GIT_DIR/hooks/* ~*more*
 
 ### References:
 **1.** [Git](https://git-scm.com) <br> 
