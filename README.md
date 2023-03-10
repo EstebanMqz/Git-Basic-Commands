@@ -102,21 +102,307 @@ Contributions are greatly appreciated!<br />
 ---
 ***Note***: If you are interested in learning more about git commands try to do your own research, more are available!
 ### **Other Commands:** <br /> <br />
-+ **[git rev-parse](https://git-scm.com/docs/git-rev-parse)** ~ Ancillary plumbing command primarily used for manipulation.
-+ **[git describe](https://git-scm.com/docs/git-describe)** ~ Describe specific commits with their hash.
-+ **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.
-+ **[git bisect](https://git-scm.com/docs/git-bisect)** ~ Binary search algorithm to find commit in project history which caused a bug.
-+ **[git archive](https://git-scm.com/docs/git-archive)** ~ Combine multiple files in a single file but removes git data.
-+ **[git reflog](https://git-scm.com/docs/git-reflog)** ~ List of changes to refs. in local repo.
-+ **[git mergetool](https://git-scm.com/docs/git-mergetool)** ~ Used to resolve merge conflicts after merging.
-+ **[git version](https://git-scm.com/docs/git-version)** ~ Show current version of git without more available options.
-+ **[git instaweb](https://git-scm.com/docs/git-instaweb)** ~ Browse your local working repository in a web server.
+
++ **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.<br>
+***e.g:*** `git am --keep-cr --signoff < a_file.patch` *to apply patch as commit.*<br>
++ **[git apply](https://git-scm.com/docs/git-apply)** ~ Apply a patch to files and add them to the index.<br>
+***e.g:*** `git apply < a_file.patch` *to apply patch to files.*<br>
++ **[git archive](https://git-scm.com/docs/git-archive)** ~ Combine multiple files in a single file but removes git data.<br>
+***e.g:*** `git archive --format=zip --output=archive.zip HEAD` to create a zip file with all files in HEAD.<br>
++ **[git bisect](https://git-scm.com/docs/git-bisect)** ~ Binary search algorithm to find commit in project history which caused a bug.<br>
+***e.g:*** `git bisect start` *to start the search.*<br>
++ **[git blame](https://git-scm.com/docs/git-blame)** ~ Show what revision and author last modified each line of a file.<br>
+***e.g:*** `git blame <file>` *to show the last author of each line in file.*<br>
++ **[git bugreport](https://git-scm.com/docs/git-bugreport)** ~ Create a report to send to git mailing list.<br>
+***e.g:*** `git bugreport -o report.txt` *to create a report and save it to report.txt.*<br>
++ **[git bundle](https://git-scm.com/docs/git-bundle)** ~ Move objects and refs by archive.<br>
+***e.g:*** `git bundle create <file> <branch>` *to create a bundle with branch.*<br>
++ **[git cat-file](https://git-scm.com/docs/git-cat-file)** ~ Provide content or type and size information for repository objects.<br>
+***e.g:*** `git cat-file -p <commit>` *to show the content of commit.*<br>
++ **[git check-attr](https://git-scm.com/docs/git-check-attr)** ~ Display git attributes.<br>
+***e.g:*** `git check-attr -a` *to show all attributes.*<br>
++ **[git check-mailmap](https://git-scm.com/docs/git-check-mailmap)** ~ Show canonical names and email addresses of contacts.<br>
+***e.g:*** `git check-mailmap <name>` *to show the canonical name of name.*<br>
++ **[git check-ref-format](https://git-scm.com/docs/git-check-ref-format)** ~ Ensure that a reference name is well formed.<br>
+***e.g:*** `git check-ref-format --branch @{-1}` *print the name of the previous branch*.<br>
++ **[git check-ignore](https://git-scm.com/docs/git-check-ignore)** ~ Debug gitignore files.<br>
+***e.g:*** `git check-ignore -v <file>` *to show the gitignore file that ignores file.*<br>
++ **[git cherry](https://git-scm.com/docs/git-cherry)** ~ Find commits not merged upstream.<br>
+***e.g:*** `git cherry -v <branch>` *to show the commits not merged in branch.*<br>
++ **[git cherry-pick](https://git-scm.com/docs/git-cherry-pick)** ~ Apply the changes introduced by some existing commits.<br>
+***e.g:*** `git cherry-pick <commit>` *to apply the changes of commit to current branch.*<br>
++ **[git citool](https://git-scm.com/docs/git-citool)** ~ Graphical alternative to git-commit.<br>
+***e.g:*** `git citool` *to open the graphical commit tool.*<br>
++ **[git clean](https://git-scm.com/docs/git-clean)** ~ Remove untracked files from the working tree.<br>
+***e.g:*** `git clean -n` *to show which files would be removed.*<br>
++ **[git clone](https://git-scm.com/docs/git-clone)** ~ Clone a repository into a new directory.<br>
+***e.g:*** `git clone <repo>` *to clone repo into current directory.*<br>
++ **[git column](https://git-scm.com/docs/git-column)** ~ Display data in columns.<br>
+***e.g:*** `git column --mode=html <file>` *to display file in html columns.*<br>
++ **[git commit](https://git-scm.com/docs/git-commit)** ~ Record changes to the repository.<br>
+***e.g:*** `git commit -m <msg>` *to commit with msg.*<br>
++ **[git commit-graph](https://git-scm.com/docs/git-commit-graph)** ~ Write and verify a commit-graph file.<br>
+***e.g:*** `git commit-graph write --reachable` *to write a commit-graph file with reachable commits.*<br>
+
+
+
+
++ **[git commit-reach](https://git-scm.com/docs/git-commit-reach)** ~ Find commits that are reachable from a commit.<br>
+***e.g:*** `git commit-reach <commit>` *to show the commits that are reachable from commit.*<br>
++ **[git commit-tree](https://git-scm.com/docs/git-commit-tree)** ~ Create a new commit object.<br>
+***e.g:*** `git commit-tree <tree> -m <msg>` *to create a commit with tree and msg.*<br>
++ **[git config](https://git-scm.com/docs/git-config)** ~ Get and set repository or global options.<br>
+***e.g:*** `git config --global user.name <name>` *to set the global user name.*<br>
++ **[git count-objects](https://git-scm.com/docs/git-count-objects)** ~ Count unpacked number of objects and their disk consumption.<br>
+***e.g:*** `git count-objects -v` *to show the number of objects and their size.*<br>
++ **[git credential](https://git-scm.com/docs/git-credential)** ~ Retrieve and store user credentials.<br>
+***e.g:*** `git credential fill` *to fill the credentials.*<br>
++ **[git credential-cache](https://git-scm.com/docs/git-credential-cache)** ~ Helper to temporarily store passwords in memory.<br>
+***e.g:*** `git credential-cache exit` *to exit the credential cache.*<br>
++ **[git credential-store](https://git-scm.com/docs/git-credential-store)** ~ Helper to store passwords on disk.<br>
+***e.g:*** `git credential-store exit` *to exit the credential store.*<br>
++ **[git cvsexportcommit](https://git-scm.com/docs/git-cvsexportcommit)** ~ Export a single commit to a CVS checkout.<br>
+***e.g:*** `git cvsexportcommit <commit>` *to export commit to a CVS checkout.*<br>
++ **[git cvsimport](https://git-scm.com/docs/git-cvsimport)** ~ Create a new git repository from a CVS checkout.<br>
+***e.g:*** `git cvsimport -v -d <cvsroot> <module> <project>` *to create a new git repository from a CVS checkout.*<br>
++ **[git cvsserver](https://git-scm.com/docs/git-cvsserver)** ~ Server for CVS clients to connect to and use Git repositories.<br>
+***e.g:*** `git cvsserver` *to start the cvs server.*<br>
++ **[git daemon](https://git-scm.com/docs/git-daemon)** ~ A really simple server for Git repositories.<br>
+***e.g:*** `git daemon` *to start the git daemon.*<br>
++ **[git describe](https://git-scm.com/docs/git-describe)** ~ Describe specific commits with their hash.<br>
+***e.g:*** `git describe --tags` *to get the latest tag*.
++ **[git diff](https://git-scm.com/docs/git-diff)** ~ Show changes between commits, commit and working tree, etc.<br>
+***e.g:*** `git diff --name-only` *to show the name of the changed files.*<br>
++ **[git diff-files](https://git-scm.com/docs/git-diff-files)** ~ Show changes between index and working tree.<br>
+***e.g:*** `git diff-files --name-only` *to show the name of the changed files.*<br>
++ **[git diff-index](https://git-scm.com/docs/git-diff-index)** ~ Show changes between commits, commit and working tree, etc.<br>
+***e.g:*** `git diff-index --name-only HEAD` *to show the name of the changed files in HEAD.*<br>
++ **[git diff-tree](https://git-scm.com/docs/git-diff-tree)** ~ Show changes between commits, commit and working tree, etc.<br>
+***e.g:*** `git diff-tree --name-only HEAD` *to show the name of the changed files in HEAD.*<br>
++ **[git difftool](https://git-scm.com/docs/git-difftool)** ~ Show changes using common diff tools.<br>
+***e.g:*** `git difftool` *to show the changes using common diff tools.*<br>
++ **[git fast-export](https://git-scm.com/docs/git-fast-export)** ~ Git data exporter.<br>
+***e.g:*** `git fast-export --all` *to export all data.*<br>
++ **[git fast-import](https://git-scm.com/docs/git-fast-import)** ~ Git data importer.<br>
+***e.g:*** `git fast-import < file` *to import data from file.*<br>
++ **[git fetch](https://git-scm.com/docs/git-fetch)** ~ Download objects and refs from another repository.<br>
+***e.g:*** `git fetch <repo>` *to fetch objects and refs from repo.*<br>
++ **[git fetch-pack](https://git-scm.com/docs/git-fetch-pack)** ~ Receive missing objects from another repository.<br>
+***e.g:*** `git fetch-pack <repo>` *to fetch objects from repo.*<br>
++ **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ Rewrite branches.<br>
+***e.g:*** `git filter-branch --tree-filter 'rm -f *.txt' HEAD` *to remove all .txt files.*<br>
++ **[git fmt-merge-msg](https://git-scm.com/docs/git-fmt-merge-msg)** ~ Produce a merge commit message.<br>
+***e.g:*** `git fmt-merge-msg <file>` *to produce a merge commit message from file.*<br>
++ **[git for-each-ref](https://git-scm.com/docs/git-for-each-ref)** ~ Iterate over references.<br>
+***e.g:*** `git for-each-ref --format='%(refname)' refs/heads` *to list all branches.*<br>
++ **[git format-patch](https://git-scm.com/docs/git-format-patch)** ~ Prepare patches for e-mail submission.<br>
+***e.g:*** `git format-patch -1` *to prepare a patch for the last commit.*<br>
++ **[git fsck](https://git-scm.com/docs/git-fsck)** ~ Verifies the connectivity and validity of the objects in the database.<br>
+***e.g:*** `git fsck` *to verify the connectivity and validity of the objects in the database.*<br>
++ **[git fsck-objects](https://git-scm.com/docs/git-fsck-objects)** ~ Verifies the connectivity and validity of the objects in the database.<br>
+***e.g:*** `git fsck-objects` *to verify the connectivity and validity of the objects in the database.*<br>
++ **[git gc](https://git-scm.com/docs/git-gc)** ~ Cleanup unnecessary files and optimize the local repository.<br>
+***e.g:*** `git gc` *to optimize the local repository.*<br>
++ **[git get-tar-commit-id](https://git-scm.com/docs/git-get-tar-commit-id)** ~ Extract commit ID from a tarball created using git-archive.<br>
+***e.g:*** `git get-tar-commit-id <file>` *to extract commit ID from file.*<br>
++ **[git grep](https://git-scm.com/docs/git-grep)** ~ Print lines matching a pattern.<br>
+***e.g:*** `git grep <pattern>` *to print lines matching pattern.*<br>
++ **[git gui](https://git-scm.com/docs/git-gui)** ~ A portable graphical interface to Git.<br>
+***e.g:*** `git gui` *to start the portable graphical interface to Git.*<br>
++ **[git gui--askpass](https://git-scm.com/docs/git-gui--askpass)** ~ A portable graphical interface to Git.<br>
+***e.g:*** `git gui--askpass` *to start the portable graphical interface to Git.*<br>
++ **[git hash-object](https://git-scm.com/docs/git-hash-object)** ~ Compute object ID and optionally creates a blob from a file.<br>
+***e.g:*** `git hash-object <file>` *to compute object ID and optionally creates a blob from file.*<br>
++ **[git help](https://git-scm.com/docs/git-help)** ~ Display help information about Git.<br>
+***e.g:*** `git help <command>` *to display help information about command.*<br>
++ **[git http-fetch](https://git-scm.com/docs/git-http-fetch)** ~ Download objects and refs from another repository via HTTP.<br>
+***e.g:*** `git http-fetch <repo>` *to download objects and refs from repo via HTTP.*<br>
++ **[git http-backend](https://git-scm.com/docs/git-http-backend)** ~ Server side implementation of Git over HTTP.<br>
+***e.g:*** `git http-backend` *to start the server side implementation of Git over HTTP.*<br>
++ **[git imap-send](https://git-scm.com/docs/git-imap-send)** ~ Send a collection of patches from stdin to an IMAP folder.<br>
+***e.g:*** `git imap-send <repo>` *to send a collection of patches from stdin to an IMAP folder.*<br>
++ **[git index-pack](https://git-scm.com/docs/git-index-pack)** ~ Build pack index file for an existing packed archive.<br>
+***e.g:*** `git index-pack <file>` *to build pack index file for file.*<br>
++ **[git init](https://git-scm.com/docs/git-init)** ~ Create an empty Git repository or reinitialize an existing one.<br>
+***e.g:*** `git init` *to create an empty Git repository.*<br>
++ **[git init-db](https://git-scm.com/docs/git-init-db)** ~ Create an empty Git repository or reinitialize an existing one.<br>
+***e.g:*** `git init-db` *to create an empty Git repository.*<br>
++ **[git instaweb](https://git-scm.com/docs/git-instaweb)** ~ Instantly browse your working repository in gitweb.<br>
+***e.g:*** `git instaweb` *to instantly browse your working repository in gitweb.*<br>
++ **[git interpret-trailers](https://git-scm.com/docs/git-interpret-trailers)** ~ Parse trailer lines from text.<br>
+***e.g:*** `git interpret-trailers <file>` *to parse trailer lines from file.*<br>
++ **[git log](https://git-scm.com/docs/git-log)** ~ Show commit logs.<br>
+***e.g:*** `git log` *to show commit logs.*<br>
++ **[git ls-files](https://git-scm.com/docs/git-ls-files)** ~ Show information about files in the index and the working tree.<br>
+***e.g:*** `git ls-files` *to show information about files in the index and the working tree.*<br>
++ **[git ls-remote](https://git-scm.com/docs/git-ls-remote)** ~ List references in a remote repository.<br>
+***e.g:*** `git ls-remote <repo>` *to list references in repo.*<br>
++ **[git ls-tree](https://git-scm.com/docs/git-ls-tree)** ~ List the contents of a tree object.<br>
+***e.g:*** `git ls-tree <tree>` *to list the contents of tree.*<br>
++ **[git mailinfo](https://git-scm.com/docs/git-mailinfo)** ~ Extracts patch and authorship from a single e-mail message.<br>
+***e.g:*** `git mailinfo <file>` *to extracts patch and authorship from file.*<br>
++ **[git mailsplit](https://git-scm.com/docs/git-mailsplit)** ~ Splits a single mailbox into mboxrd format.<br>
+***e.g:*** `git mailsplit <file>` *to splits file into mboxrd format.*<br>
++ **[git merge](https://git-scm.com/docs/git-merge)** ~ Join two or more development histories together.<br>
+***e.g:*** `git merge <branch>` *to join two or more development histories together.*<br>
++ **[git merge-base](https://git-scm.com/docs/git-merge-base)** ~ Find as good common ancestors as possible for a merge.<br>
+***e.g:*** `git merge-base <branch1> <branch2>` *to find as good common ancestors as possible for a merge.*<br>
++ **[git merge-file](https://git-scm.com/docs/git-merge-file)** ~ Run a three-way file merge.<br>
+***e.g:*** `git merge-file <file1> <file2> <file3>` *to run a three-way file merge.*<br>
++ **[git merge-index](https://git-scm.com/docs/git-merge-index)** ~ Run a merge for files in the index.<br>
++ **[git merge-ours](https://git-scm.com/docs/git-merge-ours)** ~ Show our version for unmerged files.<br>
+***e.g:*** `git merge-ours <file>` *to show our version for unmerged files.*<br>
++ **[git merge-recursive](https://git-scm.com/docs/git-merge-recursive)** ~ Run a recursive merge.<br>
+***e.g:*** `git merge-recursive <file>` *to run a recursive merge.*<br>
++ **[git merge-subtree](https://git-scm.com/docs/git-merge-subtree)** ~ Merge a subtree.<br>
+***e.g:*** `git merge-subtree <file>` *to merge a subtree.*<br>
++ **[git merge-tree](https://git-scm.com/docs/git-merge-tree)** ~ Show three-way merge without touching index.<br>
+***e.g:*** `git merge-tree <file>` *to show three-way merge without touching index.*<br>
++ **[git mergetool](https://git-scm.com/docs/git-mergetool)** ~ Run merge conflict resolution tools to resolve merge conflicts.<br>
+***e.g:*** `git mergetool` *to run merge conflict resolution tools to resolve merge conflicts.*<br>
++ **[merge-index](https://git-scm.com/docs/merge-index)** ~ Run a merge for files in the index.<br>
+***e.g:*** `git merge-index <file>` *to run a merge for files in the index.*<br>
++ **[git mktag](https://git-scm.com/docs/git-mktag)** ~ Create a tag object.<br>
+***e.g:*** `git mktag <file>` *to create a tag object.*<br>
++ **[git mktree](https://git-scm.com/docs/git-mktree)** ~ Build a tree-object from ls-tree formatted text.<br>
+***e.g:*** `git mktree <file>` *to build a tree-object from ls-tree formatted text.*<br>
++ **[git mv](https://git-scm.com/docs/git-mv)** ~ Move or rename a file, a directory, or a symlink.<br>
+***e.g:*** `git mv <file1> <file2>` *to move or rename file1 to file2.*<br>
++ **[git name-rev](https://git-scm.com/docs/git-name-rev)** ~ Find symbolic names for given revs.<br>
+***e.g:*** `git name-rev <rev>` *to find symbolic names for given revs.*<br>
++ **[git notes](https://git-scm.com/docs/git-notes)** ~ Add or inspect object notes.<br>
+***e.g:*** `git notes` *to add or inspect object notes.*<br>
++ **[git pack-objects](https://git-scm.com/docs/git-pack-objects)** ~ Create a packed archive of objects.<br>
+***e.g:*** `git pack-objects <file>` *to create a packed archive of objects.*<br>
++ **[git pack-redundant](https://git-scm.com/docs/git-pack-redundant)** ~ Find redundant pack files.<br>
+***e.g:*** `git pack-redundant <file>` *to find redundant pack files.*<br>
++ **[git pack-refs](https://git-scm.com/docs/git-pack-refs)** ~ Pack heads and tags for efficient repository access.<br>
+***e.g:*** `git pack-refs` *to pack heads and tags for efficient repository access.*<br>
++ **[git patch-id](https://git-scm.com/docs/git-patch-id)** ~ Compute unique ID for a patch.<br>
+***e.g:*** `git patch-id <file>` *to compute unique ID for a patch.*<br>
++ **[git prune](https://git-scm.com/docs/git-prune)** ~ Prune all unreachable objects from the object database.<br>
+***e.g:*** `git prune` *to prune all unreachable objects from the object database.*<br>
++ **[git prune-packed](https://git-scm.com/docs/git-prune-packed)** ~ Prune loose objects that are already in pack files.<br>
+***e.g:*** `git prune-packed` *to prune loose objects that are already in pack files.*<br>
++ **[git pull](https://git-scm.com/docs/git-pull)** ~ Fetch from and integrate with another repository or a local branch.<br>
+***e.g:*** `git pull` *to fetch from and integrate with another repository or a local branch.*<br>
++ **[git push](https://git-scm.com/docs/git-push)** ~ Update remote refs along with associated objects.<br>
+***e.g:*** `git push` *to update remote refs along with associated objects.*<br>
++ **[git range-diff](https://git-scm.com/docs/git-range-diff)** ~ Show changes between two commit ranges.<br>
+***e.g:*** `git range-diff <file>` *to show changes between two commit ranges.*<br>
++ **[git read-tree](https://git-scm.com/docs/git-read-tree)** ~ Reads tree information into the index.<br>
+***e.g:*** `git read-tree <file>` *to read tree information into the index.*<br>
++ **[git rebase](https://git-scm.com/docs/git-rebase)** ~ Reapply commits on top of another base tip.<br>
+***e.g:*** `git rebase` *to reapply commits on top of another base tip.*<br>
++ **[git receive-pack](https://git-scm.com/docs/git-receive-pack)** ~ Receive what is pushed into the repository.<br>
+***e.g:*** `git receive-pack <file>` *to receive what is pushed into the repository.*<br>
++ **[git reflog](https://git-scm.com/docs/git-reflog)** ~ Manage reflog information.<br>
+***e.g:*** `git reflog` *to manage reflog information.*<br>
++ **[git remote](https://git-scm.com/docs/git-remote)** ~ Manage set of tracked repositories.<br>
+***e.g:*** `git remote` *to manage set of tracked repositories.*<br>
++ **[git remote-ext](https://git-scm.com/docs/git-remote-ext)** ~ External helper to communicate with a remote repository.<br>
+***e.g:*** `git remote-ext <file>` *to communicate with a remote repository.*<br>
++ **[git remote-fd](https://git-scm.com/docs/git-remote-fd)** ~ Helper to communicate with a remote repository.<br>
+***e.g:*** `git remote-fd <file>` *to communicate with a remote repository.*<br>
++ **[git repack](https://git-scm.com/docs/git-repack)** ~ Pack unpacked objects in a repository.<br>
+***e.g:*** `git repack` *to pack unpacked objects in a repository.*<br>
++ **[git replace](https://git-scm.com/docs/git-replace)** ~ Create, list, delete refs to replace objects.<br>
+***e.g:*** `git replace` *to create, list, delete refs to replace objects.*<br>
++ **[git request-pull](https://git-scm.com/docs/git-request-pull)** ~ Generates a summary of pending changes.<br>
+***e.g:*** `git request-pull` *to generate a summary of pending changes.*<br>
++ **[git rerere](https://git-scm.com/docs/git-rerere)** ~ Reuse recorded resolution of conflicted merges.<br>
+***e.g:*** `git rerere` *to reuse recorded resolution of conflicted merges.*<br>
++ **[git reset](https://git-scm.com/docs/git-reset)** ~ Reset current HEAD to the specified state.<br>
+***e.g:*** `git reset` *to reset current HEAD to the specified state.*<br>
++ **[git resolve-undo](https://git-scm.com/docs/git-resolve-undo)** ~ Undo the last cherry-pick, revert or merge.<br>
+***e.g:*** `git resolve-undo` *to undo the last cherry-pick, revert or merge.*<br>
++ **[git rev-list](https://git-scm.com/docs/git-rev-list)** ~ Lists commit objects in reverse chronological order.<br>
+***e.g:*** `git rev-list` *to list commit objects in reverse chronological order.*<br>
++ **[git rev-parse](https://git-scm.com/docs/git-rev-parse)** ~ Pick out and massage parameters.<br>
+***e.g:*** `git rev-parse` *to pick out and massage parameters.*<br>
++ **[git revert](https://git-scm.com/docs/git-revert)** ~ Revert some existing commits.<br>
+***e.g:*** `git revert` *to revert some existing commits.*<br>
++ **[git rm](https://git-scm.com/docs/git-rm)** ~ Remove files from the working tree and from the index.<br>
+***e.g:*** `git rm` *to remove files from the working tree and from the index.*<br>
++ **[git send-email](https://git-scm.com/docs/git-send-email)** ~ Send a collection of patches as emails.<br>
+***e.g:*** `git send-email` *to send a collection of patches as emails.*<br>
++ **[git shortlog](https://git-scm.com/docs/git-shortlog)** ~ Summarize 'git log' output.<br>
+***e.g:*** `git shortlog` *to summarize 'git log' output.*<br>
++ **[git show](https://git-scm.com/docs/git-show)** ~ Show various types of objects.<br>
+***e.g:*** `git show` *to show various types of objects.*<br>
++ **[git show-branch](https://git-scm.com/docs/git-show-branch)** ~ Show branches and their commits.<br>
+***e.g:*** `git show-branch` *to show branches and their commits.*<br>
++ **[git stage](https://git-scm.com/docs/git-stage)** ~ Stage file contents for the next commit.<br>
+***e.g:*** `git stage` *to stage file contents for the next commit.*<br>
++ **[git stash](https://git-scm.com/docs/git-stash)** ~ Stash the changes in a dirty working directory away.<br>
+***e.g:*** `git stash` *to stash the changes in a dirty working directory away.*<br>
++ **[git status](https://git-scm.com/docs/git-status)** ~ Show the working tree status.<br>
+***e.g:*** `git status` *to show the working tree status.*<br>
++ **[git stripspace](https://git-scm.com/docs/git-stripspace)** ~ Remove unnecessary whitespace.<br>
+***e.g:*** `git stripspace` *to remove unnecessary whitespace.*<br>
++ **[git submodule](https://git-scm.com/docs/git-submodule)** ~ Initialize, update or inspect submodules.<br>
+***e.g:*** `git submodule` *to initialize, update or inspect submodules.*<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++ **[gc](https://git-scm.com/docs/git-gc)** ~ Cleanup unnecessary files and optimize the local repository.<br>
+***e.g:*** `git gc` *to optimize the local repository.*<br>
+
+
+
++ **[git rev-parse](https://git-scm.com/docs/git-rev-parse)** ~ Ancillary plumbing command primarily used for manipulation.<br>***e.g:***  `git rev-parse --show-toplevel` to get the root dir. of the repo.
+
+
+
+
++ **[git reflog](https://git-scm.com/docs/git-reflog)** ~ List of changes to refs. in local repo. E.g: `git reflog` to list all changes.
++ **[git mergetool](https://git-scm.com/docs/git-mergetool)** ~ Used to resolve merge conflicts after merging. <br>***e.g:*** `git mergetool` to open a GUI to resolve conflicts.
++ **[git version](https://git-scm.com/docs/git-version)** ~ Show current version of git without more available options.<br>***e.g:*** `git version` to show current version.
++ **[git instaweb](https://git-scm.com/docs/git-instaweb)** ~ Browse your local working repository in a web server. <br>***e.g:*** `git instaweb --httpd=webrick` to start a web server.
 + **[git fast-import](https://git-scm.com/docs/git-fast-import)** ~ Import large projects min. memory (100k+ commits on avg PC in 1h).
-+ **git remote-helpers** ~ *pending*
-+ **git filter-branch** ~ *pending*
-+ **git submodule** ~ *pending*
-+ **git cli** ~ *pending*
-+ **git shell** ~ *pending*
++ **[git remote-helpers](https://git-scm.com/docs/gitremote-helpers) ~ They are used to interact with remote repositories that git does not support natively. e.g, http, https, ftp, etc.
++ **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ History filtering tool, that rewrites branches and commit information. Risks associated by object name rewriting which won't converge to original branch, do not use if you don't know the risks! *filter-repo* is recommended instead.
++ **[git filter-repo](https://github.com/newren/git-filter-repo/)** ~ Rewrite git history with a new repo. It is a faster, safer, and more featureful alternative to git filter-branch.
++ **[git submodule](https://git-scm.com/docs/git-submodule)** ~  Submodule is a git repo inside another git repo. It is used to manage dependencies of a project. e.g `git submodule add <URL> <path>` where `<URL>` is the URL of the repo to be added and `<path>` is the path where the repo will be added.
++ **[git shell](https://github.com/git-utilities/git-shell-commands)** ~ Restricted login shell for git-only SSH access.  The command is the following `git-shell -c '<command>'` where `<command>` is the command to be executed.
 + **git notes** ~ *pending*
 + **git reflog** ~ *pending*
 + **git rev-list** ~ *pending*
@@ -150,7 +436,7 @@ Contributions are greatly appreciated!<br />
 + **echo** ~ *pending*
 + **pass** ~ *pending*
 + **mr** ~ *pending*
-+ **cg** ~ *pending*
+
 
 ### References:
 **1.** [Git](https://git-scm.com) <br> 
