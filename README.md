@@ -40,8 +40,7 @@
 ---
 
 # **Git Commands** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
-The following is a list of git commands with common options and tags but many more are avaliable.<br>
-*Refer to their documentation for more information.*
+The following is a list of common git commands based on the [Git Documentation](https://git-scm.com/docs).
 
 <br/> 
 
@@ -91,6 +90,7 @@ The following is a list of git commands with common options and tags but many mo
 *See Also*: <br>
 [Glossary](https://linux.die.net/man/7/gitglossary)<br>
 
+
 ---
 ### **Author**:
 [EstebanMqz](https://github.com/EstebanMqz)
@@ -100,7 +100,7 @@ Feel free to send me an [email](mailto:esteban@esteban) if you have any question
 Contributions are greatly appreciated!<br />
 
 ---
-***Note***: If you are interested in learning more about git commands try to do your own research, more are available!
+***Note***: If you are interested in learning more about git commands you can check out the list below and refer to the [git documentation](https://git-scm.com/docs) for more options on these commands.<br />
 ### **Other Commands:** <br /> <br />
 
 + **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.<br>
@@ -108,7 +108,7 @@ Contributions are greatly appreciated!<br />
 + **[git apply](https://git-scm.com/docs/git-apply)** ~ Apply a patch to files and add them to the index.<br>
 ***e.g:*** `git apply < a_file.patch` *to apply patch to files.*<br>
 + **[git archive](https://git-scm.com/docs/git-archive)** ~ Combine multiple files in a single file but removes git data.<br>
-***e.g:*** `git archive --format=zip --output=archive.zip HEAD` to create a zip file with all files in HEAD.<br>
+***e.g:*** `git archive --format=zip --output=archive.zip HEAD` *to create a zip file with all files in HEAD.*<br>
 + **[git bisect](https://git-scm.com/docs/git-bisect)** ~ Binary search algorithm to find commit in project history which caused a bug.<br>
 ***e.g:*** `git bisect start` *to start the search.*<br>
 + **[git blame](https://git-scm.com/docs/git-blame)** ~ Show what revision and author last modified each line of a file.<br>
@@ -134,7 +134,7 @@ Contributions are greatly appreciated!<br />
 + **[git citool](https://git-scm.com/docs/git-citool)** ~ Graphical alternative to git-commit.<br>
 ***e.g:*** `git citool` *to open the graphical commit tool.*<br>
 + **[git clean](https://git-scm.com/docs/git-clean)** ~ Remove untracked files from the working tree.<br>
-***e.g:*** `git clean -n` *to show which files would be removed.*<br>
+***e.g:*** `git clean -n` *to show what files what files would be removed without removing them.*<br>
 + **[git clone](https://git-scm.com/docs/git-clone)** ~ Clone a repository into a new directory.<br>
 ***e.g:*** `git clone <repo>` *to clone repo into current directory.*<br>
 + **[git column](https://git-scm.com/docs/git-column)** ~ Display data in columns.<br>
@@ -142,11 +142,7 @@ Contributions are greatly appreciated!<br />
 + **[git commit](https://git-scm.com/docs/git-commit)** ~ Record changes to the repository.<br>
 ***e.g:*** `git commit -m <msg>` *to commit with msg.*<br>
 + **[git commit-graph](https://git-scm.com/docs/git-commit-graph)** ~ Write and verify a commit-graph file.<br>
-***e.g:*** `git commit-graph write --reachable` *to write a commit-graph file with reachable commits.*<br>
-
-
-
-
+***e.g:*** `git show-ref -s | git commit-graph write --stdin-commits` *to write a commit-graph file for reachable commits.*<br>
 + **[git commit-reach](https://git-scm.com/docs/git-commit-reach)** ~ Find commits that are reachable from a commit.<br>
 ***e.g:*** `git commit-reach <commit>` *to show the commits that are reachable from commit.*<br>
 + **[git commit-tree](https://git-scm.com/docs/git-commit-tree)** ~ Create a new commit object.<br>
@@ -156,31 +152,31 @@ Contributions are greatly appreciated!<br />
 + **[git count-objects](https://git-scm.com/docs/git-count-objects)** ~ Count unpacked number of objects and their disk consumption.<br>
 ***e.g:*** `git count-objects -v` *to show the number of objects and their size.*<br>
 + **[git credential](https://git-scm.com/docs/git-credential)** ~ Retrieve and store user credentials.<br>
-***e.g:*** `git credential fill` *to fill the credentials.*<br>
+***e.g:*** `git credential fill` *attempt to add "username" and "password" attributes by reading config credential helpers.*<br>
 + **[git credential-cache](https://git-scm.com/docs/git-credential-cache)** ~ Helper to temporarily store passwords in memory.<br>
-***e.g:*** `git credential-cache exit` *to exit the credential cache.*<br>
-+ **[git credential-store](https://git-scm.com/docs/git-credential-store)** ~ Helper to store passwords on disk.<br>
-***e.g:*** `git credential-store exit` *to exit the credential store.*<br>
+***e.g:*** `git credential-cache exit` *exit early, forgetting all cached credentials before their timeout.*<br>
++ **[git credential-store](https://git-scm.com/docs/git-credential-store)** ~  Helper to store credentials on disk to reduce time to fill.<br>
+***e.g:*** `git credential-store <file>` *to store credentials in file.*<br>
 + **[git cvsexportcommit](https://git-scm.com/docs/git-cvsexportcommit)** ~ Export a single commit to a CVS checkout.<br>
 ***e.g:*** `git cvsexportcommit <commit>` *to export commit to a CVS checkout.*<br>
 + **[git cvsimport](https://git-scm.com/docs/git-cvsimport)** ~ Create a new git repository from a CVS checkout.<br>
 ***e.g:*** `git cvsimport -v -d <cvsroot> <module> <project>` *to create a new git repository from a CVS checkout.*<br>
 + **[git cvsserver](https://git-scm.com/docs/git-cvsserver)** ~ Server for CVS clients to connect to and use Git repositories.<br>
-***e.g:*** `git cvsserver` *to start the cvs server.*<br>
+***e.g*** `git cvsserver --base-path=<path> <repo>` *to start the git cvsserver.*<br>
 + **[git daemon](https://git-scm.com/docs/git-daemon)** ~ A really simple server for Git repositories.<br>
-***e.g:*** `git daemon` *to start the git daemon.*<br>
+***e.g:*** `git daemon --reuseaddr --base-path=<dir.> --export-all` *to restart server & look for repos in dir. to export.*<br>
 + **[git describe](https://git-scm.com/docs/git-describe)** ~ Describe specific commits with their hash.<br>
-***e.g:*** `git describe --tags` *to get the latest tag*.
+***e.g:*** `git describe commit` *to describe commit with its hash (HEAD by default).*<br>
 + **[git diff](https://git-scm.com/docs/git-diff)** ~ Show changes between commits, commit and working tree, etc.<br>
-***e.g:*** `git diff --name-only` *to show the name of the changed files.*<br>
+***e.g:*** `git diff --stat` *to show the summary of the changed files.*<br>
 + **[git diff-files](https://git-scm.com/docs/git-diff-files)** ~ Show changes between index and working tree.<br>
-***e.g:*** `git diff-files --name-only` *to show the name of the changed files.*<br>
+***e.g:*** `--diff-algorithm={minimal}`*to include the smallest possible diff are included.*<br>
 + **[git diff-index](https://git-scm.com/docs/git-diff-index)** ~ Show changes between commits, commit and working tree, etc.<br>
-***e.g:*** `git diff-index --name-only HEAD` *to show the name of the changed files in HEAD.*<br>
+***e.g:*** `git diff-index --compact-summary HEAD` *to show the summary of the changed files in HEAD.*<br>
 + **[git diff-tree](https://git-scm.com/docs/git-diff-tree)** ~ Show changes between commits, commit and working tree, etc.<br>
-***e.g:*** `git diff-tree --name-only HEAD` *to show the name of the changed files in HEAD.*<br>
+***e.g:*** `git diff-tree --shortstat HEAD` *to show the summary of the changed files in HEAD.*<br>
 + **[git difftool](https://git-scm.com/docs/git-difftool)** ~ Show changes using common diff tools.<br>
-***e.g:*** `git difftool` *to show the changes using common diff tools.*<br>
+***e.g:*** `git difftool-g` *to show the changes in graphical diff tool.*<br>
 + **[git fast-export](https://git-scm.com/docs/git-fast-export)** ~ Git data exporter.<br>
 ***e.g:*** `git fast-export --all` *to export all data.*<br>
 + **[git fast-import](https://git-scm.com/docs/git-fast-import)** ~ Git data importer.<br>
@@ -198,21 +194,17 @@ Contributions are greatly appreciated!<br />
 + **[git format-patch](https://git-scm.com/docs/git-format-patch)** ~ Prepare patches for e-mail submission.<br>
 ***e.g:*** `git format-patch -1` *to prepare a patch for the last commit.*<br>
 + **[git fsck](https://git-scm.com/docs/git-fsck)** ~ Verifies the connectivity and validity of the objects in the database.<br>
-***e.g:*** `git fsck` *to verify the connectivity and validity of the objects in the database.*<br>
-+ **[git fsck-objects](https://git-scm.com/docs/git-fsck-objects)** ~ Verifies the connectivity and validity of the objects in the database.<br>
-***e.g:*** `git fsck-objects` *to verify the connectivity and validity of the objects in the database.*<br>
+***e.g:*** `git fsck --cache` *to check the connectivity and validity of the objects in the cache.*<br>
 + **[git gc](https://git-scm.com/docs/git-gc)** ~ Cleanup unnecessary files and optimize the local repository.<br>
-***e.g:*** `git gc` *to optimize the local repository.*<br>
+***e.g:*** `git gc --force` *to force garbage collection.*<br>
 + **[git get-tar-commit-id](https://git-scm.com/docs/git-get-tar-commit-id)** ~ Extract commit ID from a tarball created using git-archive.<br>
 ***e.g:*** `git get-tar-commit-id <file>` *to extract commit ID from file.*<br>
 + **[git grep](https://git-scm.com/docs/git-grep)** ~ Print lines matching a pattern.<br>
-***e.g:*** `git grep <pattern>` *to print lines matching pattern.*<br>
+***e.g:*** `git grep -n 'print' <file>` *to print lines containing 'print' and their line numbers.*<br>
 + **[git gui](https://git-scm.com/docs/git-gui)** ~ A portable graphical interface to Git.<br>
-***e.g:*** `git gui` *to start the portable graphical interface to Git.*<br>
-+ **[git gui--askpass](https://git-scm.com/docs/git-gui--askpass)** ~ A portable graphical interface to Git.<br>
-***e.g:*** `git gui--askpass` *to start the portable graphical interface to Git.*<br>
+***e.g:*** `git gui citool --nocommit` *to start the portable graphical interface to Git.*<br>
 + **[git hash-object](https://git-scm.com/docs/git-hash-object)** ~ Compute object ID and optionally creates a blob from a file.<br>
-***e.g:*** `git hash-object <file>` *to compute object ID and optionally creates a blob from file.*<br>
+***e.g:*** `git hash-object -w <file>` *to compute object ID and optionally creates a blob from file.*<br>
 + **[git help](https://git-scm.com/docs/git-help)** ~ Display help information about Git.<br>
 ***e.g:*** `git help <command>` *to display help information about command.*<br>
 + **[git http-fetch](https://git-scm.com/docs/git-http-fetch)** ~ Download objects and refs from another repository via HTTP.<br>
