@@ -174,86 +174,81 @@ Contributions are greatly appreciated!<br />
 + **[git diff-index](https://git-scm.com/docs/git-diff-index)** ~ Show changes between commits, commit and working tree, etc.<br>
 ***e.g:*** `git diff-index --compact-summary HEAD` *to show the summary of the changed files in HEAD.*<br>
 + **[git diff-tree](https://git-scm.com/docs/git-diff-tree)** ~ Show changes between commits, commit and working tree, etc.<br>
-***e.g:*** `git diff-tree --shortstat HEAD` *to show the summary of the changed files in HEAD.*<br>
+***e.g:*** `git diff-tree --s7hortstat HEAD` *to show the summary of the changed files in HEAD.*<br>
 + **[git difftool](https://git-scm.com/docs/git-difftool)** ~ Show changes using common diff tools.<br>
-***e.g:*** `git difftool-g` *to show the changes in graphical diff tool.*<br>
+***e.g:*** `git difftool --tool-help` *to show the list of available tools.*<br>
 + **[git fast-export](https://git-scm.com/docs/git-fast-export)** ~ Git data exporter.<br>
 ***e.g:*** `git fast-export --all` *to export all data.*<br>
 + **[git fast-import](https://git-scm.com/docs/git-fast-import)** ~ Git data importer.<br>
-***e.g:*** `git fast-import < file` *to import data from file.*<br>
+***e.g:*** `git fast-import --max-pack-size=1G` *to import data into a packfile of size 1G (default is unlimited)*<br>
 + **[git fetch](https://git-scm.com/docs/git-fetch)** ~ Download objects and refs from another repository.<br>
 ***e.g:*** `git fetch <repo>` *to fetch objects and refs from repo.*<br>
 + **[git fetch-pack](https://git-scm.com/docs/git-fetch-pack)** ~ Receive missing objects from another repository.<br>
-***e.g:*** `git fetch-pack <repo>` *to fetch objects from repo.*<br>
-+ **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ Rewrite branches.<br>
+***e.g:*** `git fetch-pack --prune --all` *to fetch all objects and prune refs that are missing on the remote.*<br>
+ **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ Rewrite branches.<br>
 ***e.g:*** `git filter-branch --tree-filter 'rm -f *.txt' HEAD` *to remove all .txt files.*<br>
 + **[git fmt-merge-msg](https://git-scm.com/docs/git-fmt-merge-msg)** ~ Produce a merge commit message.<br>
 ***e.g:*** `git fmt-merge-msg <file>` *to produce a merge commit message from file.*<br>
 + **[git for-each-ref](https://git-scm.com/docs/git-for-each-ref)** ~ Iterate over references.<br>
 ***e.g:*** `git for-each-ref --format='%(refname)' refs/heads` *to list all branches.*<br>
 + **[git format-patch](https://git-scm.com/docs/git-format-patch)** ~ Prepare patches for e-mail submission.<br>
-***e.g:*** `git format-patch -1` *to prepare a patch for the last commit.*<br>
+***e.g:*** `git format-patch -root <commit>` *to format everything up from start until commit.*<br>
 + **[git fsck](https://git-scm.com/docs/git-fsck)** ~ Verifies the connectivity and validity of the objects in the database.<br>
 ***e.g:*** `git fsck --cache` *to check the connectivity and validity of the objects in the cache.*<br>
 + **[git gc](https://git-scm.com/docs/git-gc)** ~ Cleanup unnecessary files and optimize the local repository.<br>
 ***e.g:*** `git gc --force` *to force garbage collection.*<br>
-+ **[git get-tar-commit-id](https://git-scm.com/docs/git-get-tar-commit-id)** ~ Extract commit ID from a tarball created using git-archive.<br>
-***e.g:*** `git get-tar-commit-id <file>` *to extract commit ID from file.*<br>
++ **[git get-tar-commit-id](https://git-scm.com/docs/git-get-tar-commit-id)** ~ Extract commit ID from an archive created using git-archive.<br>
+***e.g:*** `git get-tar-commit-id <file>` *to extract most recent commit ID from file.*<br>
 + **[git grep](https://git-scm.com/docs/git-grep)** ~ Print lines matching a pattern.<br>
 ***e.g:*** `git grep -n 'print' <file>` *to print lines containing 'print' and their line numbers.*<br>
 + **[git gui](https://git-scm.com/docs/git-gui)** ~ A portable graphical interface to Git.<br>
-***e.g:*** `git gui citool --nocommit` *to start the portable graphical interface to Git.*<br>
+***e.g:*** `git gui citool --nocommit` *Checks for unmerged entries on index and exits gui without committing.*<br>
 + **[git hash-object](https://git-scm.com/docs/git-hash-object)** ~ Compute object ID and optionally creates a blob from a file.<br>
-***e.g:*** `git hash-object -w <file>` *to compute object ID and optionally creates a blob from file.*<br>
+***e.g:*** `git hash-object -w --path <file>` *write the blob to the object database and print its hash.*<br>
 + **[git help](https://git-scm.com/docs/git-help)** ~ Display help information about Git.<br>
-***e.g:*** `git help <command>` *to display help information about command.*<br>
+***e.g:*** `git help -all` *to display all git commands.*<br>
 + **[git http-fetch](https://git-scm.com/docs/git-http-fetch)** ~ Download objects and refs from another repository via HTTP.<br>
-***e.g:*** `git http-fetch <repo>` *to download objects and refs from repo via HTTP.*<br>
+***e.g:*** `git http-fetch -v <[URL]/refs>` *to report all refs downloaded in repo.*<br>
 + **[git http-backend](https://git-scm.com/docs/git-http-backend)** ~ Server side implementation of Git over HTTP.<br>
-***e.g:*** `git http-backend` *to start the server side implementation of Git over HTTP.*<br>
+***e.g:*** `git http-backend` *serve git repo to clients over HTTP(s) protocols.*<br>
 + **[git imap-send](https://git-scm.com/docs/git-imap-send)** ~ Send a collection of patches from stdin to an IMAP folder.<br>
 ***e.g:*** `git imap-send <repo>` *to send a collection of patches from stdin to an IMAP folder.*<br>
 + **[git index-pack](https://git-scm.com/docs/git-index-pack)** ~ Build pack index file for an existing packed archive.<br>
 ***e.g:*** `git index-pack <file>` *to build pack index file for file.*<br>
 + **[git init](https://git-scm.com/docs/git-init)** ~ Create an empty Git repository or reinitialize an existing one.<br>
-***e.g:*** `git init` *to create an empty Git repository.*<br>
+***e.g:*** `git init -b <branch-name>` *to create an empty local Git repository with given branch name.*<br>
 + **[git init-db](https://git-scm.com/docs/git-init-db)** ~ Create an empty Git repository or reinitialize an existing one.<br>
-***e.g:*** `git init-db` *to create an empty Git repository.*<br>
+***e.g:*** `git init-db --config <config-file>` *to create an empty local Git repository with given config file.*<br>
 + **[git instaweb](https://git-scm.com/docs/git-instaweb)** ~ Instantly browse your working repository in gitweb.<br>
-***e.g:*** `git instaweb` *to instantly browse your working repository in gitweb.*<br>
+***e.g:*** `git instaweb --httpd=python --port=8080` *to start a python web server on port 8080.*<br>
 + **[git interpret-trailers](https://git-scm.com/docs/git-interpret-trailers)** ~ Parse trailer lines from text.<br>
-***e.g:*** `git interpret-trailers <file>` *to parse trailer lines from file.*<br>
+***e.g:*** `git interpret-trailers --check <file>` *to check if file contains trailer lines (similar to RFC 822 e-mail headers)*<br>
 + **[git log](https://git-scm.com/docs/git-log)** ~ Show commit logs.<br>
-***e.g:*** `git log` *to show commit logs.*<br>
+***e.g:*** `git log --follow <file>` *to show commit logs beyond renames for file.*<br>
 + **[git ls-files](https://git-scm.com/docs/git-ls-files)** ~ Show information about files in the index and the working tree.<br>
-***e.g:*** `git ls-files` *to show information about files in the index and the working tree.*<br>
+***e.g:*** `git ls-files -u` *to show unmerged files.*<br>
 + **[git ls-remote](https://git-scm.com/docs/git-ls-remote)** ~ List references in a remote repository.<br>
-***e.g:*** `git ls-remote <repo>` *to list references in repo.*<br>
+***e.g:*** `git ls-remote <[URL]/refs>` *to display references in a remote repository associated with commits IDs.*<br>
 + **[git ls-tree](https://git-scm.com/docs/git-ls-tree)** ~ List the contents of a tree object.<br>
-***e.g:*** `git ls-tree <tree>` *to list the contents of tree.*<br>
+***e.g:*** `git ls-tree <tree>` *to list the contents of tree with its id*<br>
 + **[git mailinfo](https://git-scm.com/docs/git-mailinfo)** ~ Extracts patch and authorship from a single e-mail message.<br>
 ***e.g:*** `git mailinfo <file>` *to extracts patch and authorship from file.*<br>
 + **[git mailsplit](https://git-scm.com/docs/git-mailsplit)** ~ Splits a single mailbox into mboxrd format.<br>
-***e.g:*** `git mailsplit <file>` *to splits file into mboxrd format.*<br>
+***e.g:*** `git mailsplit <mbox>` *to splits mbox into mboxrd format.*<br>
 + **[git merge](https://git-scm.com/docs/git-merge)** ~ Join two or more development histories together.<br>
-***e.g:*** `git merge <branch>` *to join two or more development histories together.*<br>
+***e.g:*** `git merge --allow-unrelated-histories <branch>` *to join two or more development histories together.*<br>
 + **[git merge-base](https://git-scm.com/docs/git-merge-base)** ~ Find as good common ancestors as possible for a merge.<br>
 ***e.g:*** `git merge-base <branch1> <branch2>` *to find as good common ancestors as possible for a merge.*<br>
 + **[git merge-file](https://git-scm.com/docs/git-merge-file)** ~ Run a three-way file merge.<br>
 ***e.g:*** `git merge-file <file1> <file2> <file3>` *to run a three-way file merge.*<br>
 + **[git merge-index](https://git-scm.com/docs/git-merge-index)** ~ Run a merge for files in the index.<br>
-+ **[git merge-ours](https://git-scm.com/docs/git-merge-ours)** ~ Show our version for unmerged files.<br>
-***e.g:*** `git merge-ours <file>` *to show our version for unmerged files.*<br>
-+ **[git merge-recursive](https://git-scm.com/docs/git-merge-recursive)** ~ Run a recursive merge.<br>
-***e.g:*** `git merge-recursive <file>` *to run a recursive merge.*<br>
-+ **[git merge-subtree](https://git-scm.com/docs/git-merge-subtree)** ~ Merge a subtree.<br>
-***e.g:*** `git merge-subtree <file>` *to merge a subtree.*<br>
+***e.g:*** `git merge-index -a` *to run a merge for files in the index that need merging.*<br>
 + **[git merge-tree](https://git-scm.com/docs/git-merge-tree)** ~ Show three-way merge without touching index.<br>
 ***e.g:*** `git merge-tree <file>` *to show three-way merge without touching index.*<br>
 + **[git mergetool](https://git-scm.com/docs/git-mergetool)** ~ Run merge conflict resolution tools to resolve merge conflicts.<br>
-***e.g:*** `git mergetool` *to run merge conflict resolution tools to resolve merge conflicts.*<br>
+***e.g:*** `git mergetool--tool-help` *to list available tools.*<br>
 + **[merge-index](https://git-scm.com/docs/merge-index)** ~ Run a merge for files in the index.<br>
-***e.g:*** `git merge-index <file>` *to run a merge for files in the index.*<br>
+***e.g:*** `git merge-index -o <file>` *to run a merge for files in the index that need merging and write the result to file.*<br>
 + **[git mktag](https://git-scm.com/docs/git-mktag)** ~ Create a tag object.<br>
 ***e.g:*** `git mktag <file>` *to create a tag object.*<br>
 + **[git mktree](https://git-scm.com/docs/git-mktree)** ~ Build a tree-object from ls-tree formatted text.<br>
@@ -261,15 +256,18 @@ Contributions are greatly appreciated!<br />
 + **[git mv](https://git-scm.com/docs/git-mv)** ~ Move or rename a file, a directory, or a symlink.<br>
 ***e.g:*** `git mv <file1> <file2>` *to move or rename file1 to file2.*<br>
 + **[git name-rev](https://git-scm.com/docs/git-name-rev)** ~ Find symbolic names for given revs.<br>
-***e.g:*** `git name-rev <rev>` *to find symbolic names for given revs.*<br>
+***e.g:*** `git name-rev --all <commit>` *to find symbolic names for given commit.*<br>
 + **[git notes](https://git-scm.com/docs/git-notes)** ~ Add or inspect object notes.<br>
-***e.g:*** `git notes` *to add or inspect object notes.*<br>
+***e.g:*** `git notes add -m "note" <commit>` *to add a note to commit.*<br>
 + **[git pack-objects](https://git-scm.com/docs/git-pack-objects)** ~ Create a packed archive of objects.<br>
-***e.g:*** `git pack-objects <file>` *to create a packed archive of objects.*<br>
-+ **[git pack-redundant](https://git-scm.com/docs/git-pack-redundant)** ~ Find redundant pack files.<br>
-***e.g:*** `git pack-redundant <file>` *to find redundant pack files.*<br>
+***e.g:*** `git pack-objects <file>` *to create a packed archive of objects in file.*<br>
+
+
+
++ **[git pack-redundant](https://git-scm.com/docs/git-pack-redundant)** ~ Find redundant pack files for piping to xargs rm.<br>
+***e.g:*** `git pack-redundant --all` *to find redundant pack files for piping to xargs rm.*<br>
 + **[git pack-refs](https://git-scm.com/docs/git-pack-refs)** ~ Pack heads and tags for efficient repository access.<br>
-***e.g:*** `git pack-refs` *to pack heads and tags for efficient repository access.*<br>
+***e.g:*** `git pack-refs --all` *to pack heads and tags that are already packed*<br>
 + **[git patch-id](https://git-scm.com/docs/git-patch-id)** ~ Compute unique ID for a patch.<br>
 ***e.g:*** `git patch-id <file>` *to compute unique ID for a patch.*<br>
 + **[git prune](https://git-scm.com/docs/git-prune)** ~ Prune all unreachable objects from the object database.<br>
