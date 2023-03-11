@@ -52,9 +52,9 @@ The following is a list of common git commands based on the [Git Documentation](
 |[4. config](https://git-scm.com/docs/git-config)|<ol style="list-style-type:none;"><li>git config <li>git config --global pull.rebase true<li> git config --global ff no<li>git config ff no<li>git config remote.origin.prune true<li>git config --global fetch.prune true<li>git config --global user.name `<username>`<li> git config --global user.email `<e-mail>`<li>git config --system user.name `<project>`<li>git config --get user.name<li>git config -l<li>git config -e|<ol style="list-style-type:none;"><li>**Display** git ***global config*** *(create if none)*.<li> **Set** the ***pull*** command ***as rebase*** *globally*.<li>**Disable** ***fast-forward*** merge for  ***local*** repos.<li>**Disable** ***fast-forward*** merge in ***local*** repo.<li>**Set** ***auto-prune*** with ***fetch*** & ***pull***.<li>**Set** ***auto-prune*** w/ ***fetch*** for  ***local*** repos.<li>**Set** ***author*** to commits for ***local*** repos.<li> **Set** ***email*** to commits for ***local*** repos.<li>**Set** ***author*** for all git users.<li>**Get** ***author/email*** from ***global/system***.<li>List all variables set in config. file.<li>**Edit config** files from ***global/system***|
 |[5. checkout](https://git-scm.com/docs/git-checkout)|<ol style="list-style-type:none;"><li>git checkout `<branch>`<li>git checkout -b `<feature>`<li> git checkout -b `<branch>` `<origin/branch>` <li> git checkout -- `<file>`<li>git checkout -<li> git checkout `<branch>~n <file>`|<ol style="list-style-type:none;"><li>**Switch** to ***branch*** in working tree.<li>**Create** and ***switch*** to ***feature*** (or any) branch.<li>**Clone** ***remote*** branch and *switch*.<li>**Discard** ***changes*** in file to *match current branch*.<li>**Switch** to ***last checkout***. <li> **Reverts local** file in  branch *n* ***commits*** *(e.g. n=2)*.|
 |[6. fetch](https://git-scm.com/docs/git-fetch)|<ol style="list-style-type:none;"><li>git fetch `<origin>`<li>git fetch `<origin>` `<branch>`<li>git fetch --all<li>git fetch --dry-run<li>git fetch --append<li>git fetch --depth=`<depth>`<li>git fetch -f<li> git fetch --prune|<ol style="list-style-type:none;"><li>**Fetch** ***all***.<li>**Fetch** ***branch***.<li>**Fetch** all ***branches*** in repo.<li>**Show** **output** but ***without fetching***.<li> **Fetch** ***without overwriting*** (.git/FETCH_HEAD).<li> **Limit fetching** to ***n depth*** commits *(e.g. n=3)*.<li>**Fetch even** if it's ***not descendant*** of *remote branch*.<li>**Remove** ***unexistant remote-tracking*** branches.|
-|[7.merge](https://git-scm.com/docs/git-merge)|<ol style="list-style-type:none;"><li>git merge `<branch>`<li> git merge `<branch>` `<target_branch>`<li>git merge --no-ff `<branch>` <li> git merge --continue<li> git merge --allow-unrelated-histories<li>git merge -base [-a] `<commit_id>` `<commit_id>`  <li> git merge -s resolve `<branch-1>` `<branch-2>`<li> git merge -s recursive -X ours OR theirs `<branch>`<li>git merge -s octopus `<branch-1>` `<branch-n>`<li> git merge -s ours `<branch-1>` `<branch-n>`<li>git merge -s subtree `<branch-1>` `<branch-2>`|<ol style="list-style-type:none;"><li>**Fast-forward** merge branch with ***HEAD*** *(linear)*.<li>**Fast-forward** merge branch to tip of ***target***.<li> **Maintain** commit ***history***, may not fast-fwd.<li>**Conclude** *conflicting* ***merge***.<li>**Merge** ***indep. projects*** by overriding safeties.<li>**Find ancestor** on ***n commits*** for a *3-way merge*.<li> **3-way merge** *2 branch HEADs*.<li> **3-way merge** ***>1 common ancestors*** for *tree*. <li> <li>**Merges** ***more than 2*** branch *HEADs*.<li>**Merges** ***multiple branches tip*** in HEAD.<li>**Reflect B tree** ***structure*** as subtree of *A*.|
+|[7.merge](https://git-scm.com/docs/git-merge)|<ol style="list-style-type:none;"><li>git merge `<branch>`<li> git merge `<branch>` `<target_branch>`<li>git merge --no-ff `<branch>` <li> git merge --continue<li> git merge --allow-unrelated-histories<li>git merge -base [-a] `<commit_id>` `<commit_id>`  <li> git merge -s resolve `<branch-1>` `<branch-2>`<li> git merge -s recursive -X ours OR theirs `<branch>`<li>git merge -s octopus `<branch-1>` `<branch-n>`<li> git merge -s ours `<branch-1>` `<branch-n>`<li>git merge -s subtree `<branch-1>` `<branch-2>`|<ol style="list-style-type:none;"><li>**Fast-forward** merge branch with ***HEAD*** *(linear)*.<li>**Fast-forward** merge branch to tip of ***target***.<li> **Maintain** commit ***history***, may not fast-fwd.<li>**Conclude** *conflicting* ***merge***.<li>**Merge** ***indep. projects*** by overriding safeties.<li>**Find ancestor** on ***n commits*** for a *3-way merge*.<li> **3-way merge** *2 branch HEADs*.<li> **3-way merge** ***>1 common ancestors*** for *tree*. <li>**Merges** ***more than 2*** branch *HEADs*.<li>**Merges** ***multiple branches tip*** in HEAD.<li>**Reflect B tree** ***structure*** as *subtree of A*.|
 |[8. pull](https://git-scm.com/docs/git-pull)|<ol style="list-style-type:none;"><li>git pull<li>git pull `<URL>`<li> git pull `<origin>` `<branch>`<li>git pull --rebase `<origin> <branch>`<li>git pull --ff-only<li> git pull --no-ff<li>git pull -s `<strategy>` -X `<option>`|<ol style="list-style-type:none;"><li>**Fetch** & **merge** *remote-tracking* with local.<li>**Clone, fetch** & **merge** remote's *URL* with local.<li> **Fetch** & **merge** *remote branch* with local.<li>**Fetch** & **rebase** *branch*.<li>**Update** *branch* without a merge commit.<li>**Pull** & **commit** even for *fast-forwards (linear)*.<li>Same strategies and options as for merge last 5.|
-|[9. add](https://git-scm.com/docs/git-add)|<ol style="list-style-type:none;"><li> git add -A<li>git add .<li>git add `<file>`<li>git add -n `<file>`<li>git add --v<li>git add -force<li>git add -p<li>git add -i<li>git add -e|<ol style="list-style-type:none;"><li>**Add** ***all changes*** in files to stage.<li>**Add** ***changes*** without *deletions* for stage.<li> **Add** ***file*** to stage.<li>**Show** if ***file*** is ***unexistant***.<li> **Ignore** indexing ***errors*** for git add.<li>**Allows** to add ***ignored*** files.<li>**Patch hunks** ***interactively*** from *index to tree*[¹](https://gitready.com/intermediate/2009/01/14/interactive-adding.html).<li> <li>**Patch changes** ***interactively*** from *index to tree*.<li>Interactive patch mode vs diff editor.|
+|[9. add](https://git-scm.com/docs/git-add)|<ol style="list-style-type:none;"><li> git add -A<li>git add .<li>git add `<file>`<li>git add -n `<file>`<li>git add --v<li>git add -force<li>git add -p<li>git add -i<li>git add -e|<ol style="list-style-type:none;"><li>**Add** ***all changes*** in files to stage.<li>**Add** ***changes*** without *deletions* for stage.<li> **Add** ***file*** to stage.<li>**Show** if ***file*** is ***unexistant***.<li> **Ignore** indexing ***errors*** for git add.<li>**Allows** to add ***ignored*** files.<li>**Patch hunks** ***interactively*** from *index to tree*[¹](https://gitready.com/intermediate/2009/01/14/interactive-adding.html).<li>**Patch changes** ***interactively*** from *index to tree*.<li>Interactive patch mode vs diff editor.|
 |[10. commit](https://git-scm.com/docs/git-commit)|<ol style="list-style-type:none;"><li> git commit -m `<msg>`<li> git commit --date=`<date>`<li>commit -i `<msg>`<li> git commit --dry-run<li>git commit -v<li>git commit --amend<li> git commit -s|<ol style="list-style-type:none;"><li>**Overwrite** commit ***msg*** .<li>**Override** author's ***date*** in commit.<li>**Commit** ***changes*** & ***unstaged*** content.<li>**List** only ***commited, uncommited*** & ***untracked*** paths.<li>**Show differences** between ***HEAD*** and ***commit***.<li>**Modify** the most *recent* commit ***msg***.<li>Add **author signature** at the ***end*** of *commit msg*.|
 |[11.push](https://git-scm.com/docs/git-push)|<ol style="list-style-type:none;"><li>git push<li>git push -u `<origin> <branch>`<li>git push --all<li>git push `<origin>` --delete `<branch>`<li> git push --force <li> git push --force-with-lease <li> git push --prune `<origin refs/heads/*>` <li> git push --mirror|<ol style="list-style-type:none;"><li>**Push** *commits*. <li>**Push** *commits* and set as ***upstream***.<li>**Push** ***all*** *commits*.<li> **Delete** ***remote-tracking*** branch.<li>**Push** commits and ***destroy all unmerged*** changes.<li>**Push** and ***destroy personal unmerged*** changes.<li>**Remove** ***remote*** *without local counterpart*.<li> **Overwrite** ***remote*** *with* ***local*** branches.|
 |[12.pull request](https://git-scm.com/docs/git-request-pull)|<ol style="list-style-type:none;"><li>git request-pull `<branch> <URL> <feature>`|<ol style="list-style-type:none;"><li>**Pull request** for changes between tag and feature.|
@@ -64,7 +64,7 @@ The following is a list of common git commands based on the [Git Documentation](
 |[16. revert](https://git-scm.com/docs/git-revert)|<ol style="list-style-type:none;"><li>git revert `<commit_id>`<li>git revert `<commit_id>` --no-edit<li>git revert -n `<commit_id>`<li>git revert -n `<HEAD>~n`<li>git revert -n `<HEAD>~n`..`<HEAD>~m`|<ol style="list-style-type:none;"><li>**Invert commit** & ***commit*** *undone changes*.<li>**Reverts** *without* a new ***commit msg***.<li>**Invert** ***changes*** & ***stage*** *only*.<li>**Revert** ***n commits***.<li>**Revert** from ***n→m commits*** *[n,m]*.|
 |[17. reset](https://git-scm.com/docs/git-reset)|<ol style="list-style-type:none;"><li>git reset `<file>`<li> git reset --mixed `<HEAD>~n`<li>git reset --mixed `<commit-id>`<li>git reset --hard `<HEAD>~n` <li>git reset --soft `<HEAD>~n`<li>git reset -p|<ol style="list-style-type:none;"><li>**Untrack** ***file***.<li>**Unmerge** & **uncommit** but ***don't unstage*** *(default)*.<li>**Mixed** with ***commit hash*** *(default)*.<li>**Undo** all ***n*** *changes*.<li>**Hard reset** but able to ***recover*** *changes* with ***git commit***.<li>**Patch interactively** (***git add -p*** *inverse*).|
 |[18. stash](https://git-scm.com/docs/git-stash)|<ol style="list-style-type:none;"><li> git stash<li> git stash push -m `<msg>`<li>git stash list<li> git stash list --stat<li>git stash apply<li>git stash pop -n<li> git stash drop -n|<ol style="list-style-type:none;"><li>**Saves work dir.** from ***local*** & *hard reset*.<li>**Saves work dir.** from local ***with msg*** & *hard reset*.<li>**List** ***stashed*** changes as an *index [*n*]*<li>**Show summary** of ***changes*** in *stash list* <li> **Recover** ***stash[0]*** from *work dir*.<li>**Recover** ***stash n*** & *delete it* from *stash* list.<li>**Delete** ***stash n*** from *stash list*.|
-|[19. status](https://git-scm.com/docs/git-stash)|<ol style="list-style-type:none;"><li> git status<li> git status -s <li> git status -b|<ol style="list-style-type:none;"><li>**List (un)staged, (un)tracked** changes (work dir.,stage & modif.).<li>**Status** in ***short*** *format*.<li>**Status** on a ***branch***.<li>|
+|[19. status](https://git-scm.com/docs/git-stash)|<ol style="list-style-type:none;"><li> git status<li> git status -s <li> git status -b|<ol style="list-style-type:none;"><li>**List (un)staged, (un)tracked** changes (work dir.,stage & modif.).<li>**Status** in ***short*** *format*.<li>**Status** on a ***branch***.|
 |[20. touch](https://linux.die.net/man/1/touch)|<ol style="list-style-type:none;"><li> git touch `<name.ext>` |<ol style="list-style-type:none;"><li>**Create file** with ***extension*** *(e.g test.txt)*.|
 |[21. switch](https://linux.die.net/man/1/switch)|<ol style="list-style-type:none;"><li> git switch `<branch>`<li> git switch  -c `<branch>`<li>git switch  -c `<branch>` `<commit_id>` |<ol style="list-style-type:none;"><li> **Switch** to ***branch***.<li> **Create** a new ***branch*** and *switch*.<li>**Grow branch** from ***commit***.|
 |[22. cd](https://www.git-tower.com/learn/git/ebook/en/command-line/appendix/command-line-101)|<ol style="list-style-type:none;"><li> cd ~/`<home>`<li>cd ~/`<home>`/`<dir.>`<li>cd ~/`<home>`/`<dir.>`/`<subdir.>`|<ol style="list-style-type:none;"><li> **Change dir.** to ***home***  *(e.g ~/Desktop)*<li>**Change dir.** to a ***folder*** in *home*.<li>**Change dir.** to n ***sub-folders*** in *home*.|  
@@ -102,7 +102,6 @@ Contributions are greatly appreciated!<br />
 ---
 ***Note***: If you are interested in learning more about git commands you can check out the list below and refer to the [git documentation](https://git-scm.com/docs) for more options on these commands.<br />
 ### **Other Commands:** <br /> <br />
-
 + **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.<br>
 ***e.g:*** `git am --keep-cr --signoff < a_file.patch` *to apply patch as commit.*<br>
 + **[git apply](https://git-scm.com/docs/git-apply)** ~ Apply a patch to files and add them to the index.<br>
@@ -185,7 +184,7 @@ Contributions are greatly appreciated!<br />
 ***e.g:*** `git fetch <repo>` *to fetch objects and refs from repo.*<br>
 + **[git fetch-pack](https://git-scm.com/docs/git-fetch-pack)** ~ Receive missing objects from another repository.<br>
 ***e.g:*** `git fetch-pack --prune --all` *to fetch all objects and prune refs that are missing on the remote.*<br>
- **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ Rewrite branches.<br>
++ **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ Rewrite branches.<br>
 ***e.g:*** `git filter-branch --tree-filter 'rm -f *.txt' HEAD` *to remove all .txt files.*<br>
 + **[git fmt-merge-msg](https://git-scm.com/docs/git-fmt-merge-msg)** ~ Produce a merge commit message.<br>
 ***e.g:*** `git fmt-merge-msg <file>` *to produce a merge commit message from file.*<br>
@@ -261,9 +260,6 @@ Contributions are greatly appreciated!<br />
 ***e.g:*** `git notes add -m "note" <commit>` *to add a note to commit.*<br>
 + **[git pack-objects](https://git-scm.com/docs/git-pack-objects)** ~ Create a packed archive of objects.<br>
 ***e.g:*** `git pack-objects <file>` *to create a packed archive of objects in file.*<br>
-
-
-
 + **[git pack-redundant](https://git-scm.com/docs/git-pack-redundant)** ~ Find redundant pack files for piping to xargs rm.<br>
 ***e.g:*** `git pack-redundant --all` *to find redundant pack files for piping to xargs rm.*<br>
 + **[git pack-refs](https://git-scm.com/docs/git-pack-refs)** ~ Pack heads and tags for efficient repository access.<br>
@@ -316,6 +312,8 @@ Contributions are greatly appreciated!<br />
 ***e.g:*** `git rm` *to remove files from the working tree and from the index.*<br>
 + **[git send-email](https://git-scm.com/docs/git-send-email)** ~ Send a collection of patches as emails.<br>
 ***e.g:*** `git send-email` *to send a collection of patches as emails.*<br>
++ **[git shell](https://github.com/git-utilities/git-shell-commands)** ~ Restricted login shell for git-only SSH access.<br>
+***e.g*** `git-shell -c '<command>'` *to run a git-shell command.*<br>
 + **[git shortlog](https://git-scm.com/docs/git-shortlog)** ~ Summarize 'git log' output.<br>
 ***e.g:*** `git shortlog` *to summarize 'git log' output.*<br>
 + **[git show](https://git-scm.com/docs/git-show)** ~ Show various types of objects.<br>
@@ -332,100 +330,45 @@ Contributions are greatly appreciated!<br />
 ***e.g:*** `git stripspace` *to remove unnecessary whitespace.*<br>
 + **[git submodule](https://git-scm.com/docs/git-submodule)** ~ Initialize, update or inspect submodules.<br>
 ***e.g:*** `git submodule` *to initialize, update or inspect submodules.*<br>
++ **[git tag](https://git-scm.com/docs/git-tag)** ~ Create, list, delete or verify a tag object signed with GPG.<br>
+***e.g:*** `git tag --annotate` *to create, list, delete or verify a tag object signed with GPG.*<br>
++ **[git tar-tree](https://git-scm.com/docs/git-tar-tree)** ~ Show the contents of a tree object as a tar archive.<br>
+***e.g:*** `git tar-tree` *to show the contents of a tree object as a tar archive.*<br>
++ **[git unpack-file](https://git-scm.com/docs/git-unpack-file)** ~ Unpack a packed archive.<br>
+***e.g:*** `git unpack-file` *to unpack a packed archive.*<br>
++ **[git unpack-objects](https://git-scm.com/docs/git-unpack-objects)** ~ Unpack objects from a packed archive.<br>
+***e.g:*** `git unpack-objects` *to unpack objects from a packed archive.*<br>
++ **[git update-index](https://git-scm.com/docs/git-update-index)** ~ Register file contents in the working tree to the index.<br>
+***e.g:*** `git update-index` *to register file contents in the working tree to the index.*<br>
++ **[git update-ref](https://git-scm.com/docs/git-update-ref)** ~ Update the object name stored in a ref safely.<br>
+***e.g:*** `git update-ref` *to update the object name stored in a ref safely.*<br>
++ **[git update-server-info](https://git-scm.com/docs/git-update-server-info)** ~ Update auxiliary info file to help dumb servers.<br>
+***e.g:*** `git update-server-info` *to update auxiliary info file to help dumb servers.*<br>
++ **[git upload-archive](https://git-scm.com/docs/git-upload-archive)** ~ Send archive back to git-upload-archive on the other end.<br>
+***e.g:*** `git upload-archive` *to send archive back to git-upload-archive on the other end.*<br>
++ **[git upload-pack](https://git-scm.com/docs/git-upload-pack)** ~ Send objects packed back to git-upload-pack on the other end.<br>
+***e.g:*** `git upload-pack` *to send objects packed back to git-upload-pack on the other end.*<br>
++ **[git var](https://git-scm.com/docs/git-var)** ~ Show a Git logical variable.<br>
+***e.g:*** `git var` *to show a Git logical variable.*<br>
++ **[git verify-commit](https://git-scm.com/docs/git-verify-commit)** ~ Check the GPG signature of commits.<br>
+***e.g:*** `git verify-commit` *to check the GPG signature of commits.*<br>
++ **[git verify-pack](https://git-scm.com/docs/git-verify-pack)** ~ Check the GPG signature of packed objects.<br>
+***e.g:*** `git verify-pack` *to check the GPG signature of packed objects.*<br>
++ **[git verify-tag](https://git-scm.com/docs/git-verify-tag)** ~ Check the GPG signature of tags.<br>
+***e.g:*** `git verify-tag` *to check the GPG signature of tags.*<br>
++ **[git web--browse](https://git-scm.com/docs/git-web--browse)** ~ Show a file or directory from a web browser.<br>
+***e.g:*** `git web--browse` *to show a file or directory from a web browser.*<br>
++ **[git whatchanged](https://git-scm.com/docs/git-whatchanged)** ~ Show logs with difference each commit introduces.<br>
+***e.g:*** `git whatchanged` *to show logs with difference each commit introduces.*<br>
++ **[git write-tree](https://git-scm.com/docs/git-write-tree)** ~ Create a tree object from the current index.<br>
+***e.g:*** `git write-tree` *to create a tree object from the current index.*<br>
++ **[git zcat-file](https://git-scm.com/docs/git-zcat-file)** ~ Show the contents of a file from a blob object.<br>
+***e.g:*** `git zcat-file` *to show the contents of a file from a blob object.*<br>
++ **[git zip-archive](https://git-scm.com/docs/git-zip-archive)** ~ Create a zip archive of files from a named tree.<br>
+***e.g:*** `git zip-archive` *to create a zip archive of files from a named tree.*<br>
++ **[git zstd](https://git-scm.com/docs/git-zstd)** ~ Compress or decompress files using zstd.<br>
+***e.g:*** `git zstd` *to compress or decompress files using zstd.*<br>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-+ **[gc](https://git-scm.com/docs/git-gc)** ~ Cleanup unnecessary files and optimize the local repository.<br>
-***e.g:*** `git gc` *to optimize the local repository.*<br>
-
-
-
-+ **[git rev-parse](https://git-scm.com/docs/git-rev-parse)** ~ Ancillary plumbing command primarily used for manipulation.<br>***e.g:***  `git rev-parse --show-toplevel` to get the root dir. of the repo.
-
-
-
-
-+ **[git reflog](https://git-scm.com/docs/git-reflog)** ~ List of changes to refs. in local repo. E.g: `git reflog` to list all changes.
-+ **[git mergetool](https://git-scm.com/docs/git-mergetool)** ~ Used to resolve merge conflicts after merging. <br>***e.g:*** `git mergetool` to open a GUI to resolve conflicts.
-+ **[git version](https://git-scm.com/docs/git-version)** ~ Show current version of git without more available options.<br>***e.g:*** `git version` to show current version.
-+ **[git instaweb](https://git-scm.com/docs/git-instaweb)** ~ Browse your local working repository in a web server. <br>***e.g:*** `git instaweb --httpd=webrick` to start a web server.
-+ **[git fast-import](https://git-scm.com/docs/git-fast-import)** ~ Import large projects min. memory (100k+ commits on avg PC in 1h).
-+ **[git remote-helpers](https://git-scm.com/docs/gitremote-helpers) ~ They are used to interact with remote repositories that git does not support natively. e.g, http, https, ftp, etc.
-+ **[git filter-branch](https://git-scm.com/docs/git-filter-branch)** ~ History filtering tool, that rewrites branches and commit information. Risks associated by object name rewriting which won't converge to original branch, do not use if you don't know the risks! *filter-repo* is recommended instead.
-+ **[git filter-repo](https://github.com/newren/git-filter-repo/)** ~ Rewrite git history with a new repo. It is a faster, safer, and more featureful alternative to git filter-branch.
-+ **[git submodule](https://git-scm.com/docs/git-submodule)** ~  Submodule is a git repo inside another git repo. It is used to manage dependencies of a project. e.g `git submodule add <URL> <path>` where `<URL>` is the URL of the repo to be added and `<path>` is the path where the repo will be added.
-+ **[git shell](https://github.com/git-utilities/git-shell-commands)** ~ Restricted login shell for git-only SSH access.  The command is the following `git-shell -c '<command>'` where `<command>` is the command to be executed.
-+ **git notes** ~ *pending*
-+ **git reflog** ~ *pending*
-+ **git rev-list** ~ *pending*
-+ **git replace** ~ *pending*
-+ **git rerere** ~ *pending*
-+ **git update-index** ~ *pending*
-+ **git bundle** ~ *pending*
-+ **git send-email** ~ *pending*
-+ **git web-browse** ~ *pending*
-+ **git pack-objects** ~ *pending*
-+ **git annotate** ~ *pending*
-+ **git tar-tree** ~ *pending*
-+ **git read-tree** ~ *pending*
-+ **git-sh-setup** ~ *pending*
-+ **git var** ~ *pending*
-+ **git gc** ~ *pending*
-+ **git annex** ~ *pending*
-+ **git grep** ~ *pending*
-+ **git show** ~ *pending*
-+ **git exec** ~ *pending*
-+ **git tag** ~ *pending*
-+ **git whatchanged** ~ *pending*
-+ **git show-ref** ~ *pending*
-+ **git annex** ~ *pending*
-+ **git difftool** ~ *pending*
-+ **git receive-pack** ~ *pending*
-+ **cg-admin-setuprepo** ~ *pending*
-+ **etckeeper** ~ *pending*
-+ **perlbrew** ~ *pending*
-+ **guilt** ~ *pending*
-+ **echo** ~ *pending*
-+ **pass** ~ *pending*
-+ **mr** ~ *pending*
 
 
 ### References:
