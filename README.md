@@ -302,68 +302,57 @@ If you are interested in learning more about git commands you can check out the 
 + **[git rev-parse](https://git-scm.com/docs/git-rev-parse)** ~ Ancillary plumbing command for parameters.<br>
 ***e.g:*** `git rev-parse --short HEAD` *to get the short version hash of HEAD.*<br>
 + **[git revert](https://git-scm.com/docs/git-revert)** ~ Revert some existing commits.<br>
-***e.g:*** `git revert` *to revert some existing commits.*<br>
+***e.g:*** `git revert HEAD~n` *to revert the last n commits.*<br>
 + **[git rm](https://git-scm.com/docs/git-rm)** ~ Remove files from the working tree and from the index.<br>
-***e.g:*** `git rm` *to remove files from the working tree and from the index.*<br>
+***e.g:*** `git rm <file>` *to remove file from remote and local.*<br>
 + **[git send-email](https://git-scm.com/docs/git-send-email)** ~ Send a collection of patches as emails.<br>
-***e.g:*** `git send-email` *to send a collection of patches as emails.*<br>
-+ **[git shell](https://github.com/git-utilities/git-shell-commands)** ~ Restricted login shell for git-only SSH access.<br>
-***e.g*** `git-shell -c '<command>'` *to run a git-shell command.*<br>
+***e.g:*** `git send-email --from=<sender> --to=<recipient> --compose` to send email from sender adress to recipient by invoking a text editor.<br> 
 + **[git shortlog](https://git-scm.com/docs/git-shortlog)** ~ Summarize 'git log' output.<br>
-***e.g:*** `git shortlog` *to summarize 'git log' output.*<br>
+***e.g:*** `git shortlog -s -n` *to show the number of commits per author.*<br>
 + **[git show](https://git-scm.com/docs/git-show)** ~ Show various types of objects.<br>
-***e.g:*** `git show` *to show various types of objects.*<br>
+***e.g:*** `git show --expand-tabs=n` *to show repository with tabs expanded to n.*<br>
 + **[git show-branch](https://git-scm.com/docs/git-show-branch)** ~ Show branches and their commits.<br>
-***e.g:*** `git show-branch` *to show branches and their commits.*<br>
+***e.g:*** `git show-branch--all` *to show all branches and their commits.*<br>
 + **[git stage](https://git-scm.com/docs/git-stage)** ~ Stage file contents for the next commit.<br>
-***e.g:*** `git stage` *to stage file contents for the next commit.*<br>
+***e.g:*** `git stage--clear` *to clear the staging area.*<br>
 + **[git stash](https://git-scm.com/docs/git-stash)** ~ Stash the changes in a dirty working directory away.<br>
-***e.g:*** `git stash` *to stash the changes in a dirty working directory away.*<br>
+***e.g:*** `git stash--keep-index` *to stash the changes in a dirty working directory away but keep the index.*<br>
 + **[git status](https://git-scm.com/docs/git-status)** ~ Show the working tree status.<br>
-***e.g:*** `git status` *to show the working tree status.*<br>
+***e.g:*** `git status--short` *to show the working tree status in short format.*<br>
 + **[git stripspace](https://git-scm.com/docs/git-stripspace)** ~ Remove unnecessary whitespace.<br>
-***e.g:*** `git stripspace` *to remove unnecessary whitespace.*<br>
+***e.g:*** `git stripspace--comment-lines` *to remove unnecessary whitespace from comment lines.*<br>
 + **[git submodule](https://git-scm.com/docs/git-submodule)** ~ Initialize, update or inspect submodules.<br>
-***e.g:*** `git submodule` *to initialize, update or inspect submodules.*<br>
+***e.g:*** `git submodule--depth=1` *to initialize, update or inspect submodules with depth 1.*<br>
 + **[git tag](https://git-scm.com/docs/git-tag)** ~ Create, list, delete or verify a tag object signed with GPG.<br>
 ***e.g:*** `git tag --annotate` *to create, list, delete or verify a tag object signed with GPG.*<br>
-+ **[git tar-tree](https://git-scm.com/docs/git-tar-tree)** ~ Show the contents of a tree object as a tar archive.<br>
-***e.g:*** `git tar-tree` *to show the contents of a tree object as a tar archive.*<br>
 + **[git unpack-file](https://git-scm.com/docs/git-unpack-file)** ~ Unpack a packed archive.<br>
-***e.g:*** `git unpack-file` *to unpack a packed archive.*<br>
+***e.g:*** `git unpack-file --list` *to list the contents of a packed archive.*<br>
 + **[git unpack-objects](https://git-scm.com/docs/git-unpack-objects)** ~ Unpack objects from a packed archive.<br>
-***e.g:*** `git unpack-objects` *to unpack objects from a packed archive.*<br>
+***e.g:*** `git unpack-objects --all` *to unpack all objects from a packed archive.*<br>
 + **[git update-index](https://git-scm.com/docs/git-update-index)** ~ Register file contents in the working tree to the index.<br>
-***e.g:*** `git update-index` *to register file contents in the working tree to the index.*<br>
+***e.g:*** `git update-index--refresh` *to register file contents in the working tree to the index.*<br>
 + **[git update-ref](https://git-scm.com/docs/git-update-ref)** ~ Update the object name stored in a ref safely.<br>
-***e.g:*** `git update-ref` *to update the object name stored in a ref safely.*<br>
+***e.g:*** `git update-ref--no-deref` *to update the object name stored in a ref safely.*<br>
 + **[git update-server-info](https://git-scm.com/docs/git-update-server-info)** ~ Update auxiliary info file to help dumb servers.<br>
-***e.g:*** `git update-server-info` *to update auxiliary info file to help dumb servers.*<br>
+***e.g:*** `git update-server-info--force` *to update the file even if it is not necessary.*<br>
 + **[git upload-archive](https://git-scm.com/docs/git-upload-archive)** ~ Send archive back to git-upload-archive on the other end.<br>
 ***e.g:*** `git upload-archive` *to send archive back to git-upload-archive on the other end.*<br>
 + **[git upload-pack](https://git-scm.com/docs/git-upload-pack)** ~ Send objects packed back to git-upload-pack on the other end.<br>
 ***e.g:*** `git upload-pack` *to send objects packed back to git-upload-pack on the other end.*<br>
 + **[git var](https://git-scm.com/docs/git-var)** ~ Show a Git logical variable.<br>
-***e.g:*** `git var` *to show a Git logical variable.*<br>
+***e.g:*** `git var -l` *to show a Git logical variable.*<br>
 + **[git verify-commit](https://git-scm.com/docs/git-verify-commit)** ~ Check the GPG signature of commits.<br>
-***e.g:*** `git verify-commit` *to check the GPG signature of commits.*<br>
+***e.g:*** `git verify-commit <commit>` *to check the GPG signature of commits.*<br>
 + **[git verify-pack](https://git-scm.com/docs/git-verify-pack)** ~ Check the GPG signature of packed objects.<br>
 ***e.g:*** `git verify-pack` *to check the GPG signature of packed objects.*<br>
 + **[git verify-tag](https://git-scm.com/docs/git-verify-tag)** ~ Check the GPG signature of tags.<br>
-***e.g:*** `git verify-tag` *to check the GPG signature of tags.*<br>
-+ **[git web--browse](https://git-scm.com/docs/git-web--browse)** ~ Show a file or directory from a web browser.<br>
-***e.g:*** `git web--browse` *to show a file or directory from a web browser.*<br>
+***e.g:*** `git verify-tag <tag>` *to check the GPG signature of tags.*<br>
++ **[git web--browse](https://git-scm.com/docs/git-web--browse)** ~ Show a file or directory from web browser.<br>
+***e.g:*** `git web--browse <URL>` *to show a file or directory from a web browser.*<br>
 + **[git whatchanged](https://git-scm.com/docs/git-whatchanged)** ~ Show logs with difference each commit introduces.<br>
-***e.g:*** `git whatchanged` *to show logs with difference each commit introduces.*<br>
+***e.g:*** `git whatchanged --stat` *to show logs with difference each commit introduces.*<br>
 + **[git write-tree](https://git-scm.com/docs/git-write-tree)** ~ Create a tree object from the current index.<br>
-***e.g:*** `git write-tree` *to create a tree object from the current index.*<br>
-+ **[git zcat-file](https://git-scm.com/docs/git-zcat-file)** ~ Show the contents of a file from a blob object.<br>
-***e.g:*** `git zcat-file` *to show the contents of a file from a blob object.*<br>
-+ **[git zip-archive](https://git-scm.com/docs/git-zip-archive)** ~ Create a zip archive of files from a named tree.<br>
-***e.g:*** `git zip-archive` *to create a zip archive of files from a named tree.*<br>
-+ **[git zstd](https://git-scm.com/docs/git-zstd)** ~ Compress or decompress files using zstd.<br>
-***e.g:*** `git zstd` *to compress or decompress files using zstd.*<br>
-
+***e.g:*** `git write-tree --missing-ok` *to create a tree object from the current index.*<br>
 
 
 ### References:
