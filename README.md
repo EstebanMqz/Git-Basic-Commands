@@ -354,14 +354,16 @@ If you are interested in learning more about git commands you can check out the 
 + **[git write-tree](https://git-scm.com/docs/git-write-tree)** ~ Create a tree object from the current index.<br>
 ***e.g:*** `git write-tree --missing-ok` *to create a tree object from the current index.*<br>
 
-
 ### References:
 **1.** [Git](https://git-scm.com) <br> 
 **2.** [*Linux Man*](https://git-scm.com) <br>
 **3.** [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
 **4.** **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*. *Chacon,S and Straub, B. (2022).*<br>
+**5.** [Github Render](https://github.com/joeyespo/grip) README.md→html→pdf *(local)*
+<br><br><br>
 
-<br><br><br><br><br><br>
+##### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         Enjoying using this Git guide? <a href="https://saythanks.io/to/EstebanMqz" target="_blank"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" align="center" alt="Say Thanks!"></a>:smiley:
+<br>
 
 ### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;*Text-Editor*:&emsp;![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white) 
 
