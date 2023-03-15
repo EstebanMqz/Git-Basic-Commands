@@ -4,7 +4,8 @@
 *Github is an open-source code platform that allows us to collaborate with others developers through [Git](https://git-scm.com/downloads), the most popular *decentralized VCS (Version Control System)*,* *although, there are other VCS like [Subversion](https://subversion.apache.org) for a more *centralized* approach.* 
 
 This is ***quick guide to collaborate*** on Github through Git but mainly as a reference for ***basic/other commands*** which are meant to be used on a git terminal. <br>
-While not so user friendly, using the **terminal** allows us to use *more* commands, to *modify* their *syntax* and to provide them with many different *options, arguments or objects and to chain several commands successively* on ***unix-like*** systems. <br>
+While not so user friendly, using the **terminal** allows us to use *more* commands, to *modify* their *syntax* and to provide them with many different <br> 
+*options, arguments or objects and to chain several commands successively* on ***unix-like*** systems. <br>
 The most popular ones are MAC OS and Linux, but Windows users can also use the [Gitbash](https://gitforwindows.org) emulator provided by Git with its download.<br><br>
 
 --- 
