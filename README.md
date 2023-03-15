@@ -1,4 +1,4 @@
-
+#### **Table of Contents**
 * [Github Contributions](#Github-Contributions)
   * [Fork vs Clone](#Fork-vs-Clone)
     * [Contributions without permissions](#Contributions-without-permissions)
@@ -61,7 +61,7 @@
 ---
 <a name="Git-Commands"/>
 
-# **Git Commands**: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
+# **Git Commands** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
 The following is a list of common git commands based on the [Git Documentation](https://git-scm.com/docs).<br>
 ***Note:*** *if you don't understand a term, check out the definitons section below.*
 <br/> 
