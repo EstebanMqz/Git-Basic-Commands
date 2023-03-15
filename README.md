@@ -1,5 +1,21 @@
 
+* [Github Contributions](#Github-Contributions)
+  * [Fork vs Clone](#Fork-vs-Clone)
+    * [Contributions without permissions](#Contributions-without-permissions)
+    * [Contributions with permissions](#Contributions-with-permissions)
+* [Git Commands](#Git-Commands)
+    * [Definitions](#Definitions)
+* [Other Commands](#Other-Commands)
+    * [Contributors](#Contributors)
+    * [References](#References)
+
+
+
+<a name="Github-Contributions"/>
+
 # **Github Contributions** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=gray)
+
+<a name="Fork-vs-Clone"/>
 
 ## Fork vs Clone:  
 
@@ -7,6 +23,8 @@
 
 -	***Clone***: Merge with original repo is only achieved by pushing to fork and then a pull request.
 ---
+
+<a name="Contributions-without-permissions"/>
 
 ### ***Contributions without permissions***:
 
@@ -25,6 +43,8 @@
 
 ---
 
+<a name="Contributions-with-permissions"/>
+
 ### ***Contributions with permissions***:
 
 ***Note***: It is a faster option to clone the original repository without a previous fork of the project if the *user IS declared as a contributor*.
@@ -39,8 +59,9 @@
 *Refer to Github official [documentation](https://docs.github.com/en/get-started/quickstart/contributing-to-projects?tool=webui) for more information related to contributions.*
 
 ---
+<a name="Git-Commands"/>
 
-# **Git Commands** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
+# **Git Commands**: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
 The following is a list of common git commands based on the [Git Documentation](https://git-scm.com/docs).<br>
 ***Note:*** *if you don't understand a term, check out the definitons section below.*
 <br/> 
@@ -82,6 +103,8 @@ The following is a list of common git commands based on the [Git Documentation](
 *Tip:* `<main>` is the default name for remote repositories as `<master>` is for local. <br>
 
 ---
+<a name="Definitions"></a>
+
 ### **Definitions**:
 + **Origin**: Primary ***working dir. of remote*** repositories by ***default***.<br>
 + **Fetch**: Fetch is a ***safe pull*** version because local ***files aren't merged*** until they are reviewed, checked out & merged.<br>
@@ -98,6 +121,8 @@ The following is a list of common git commands based on the [Git Documentation](
 <br>
 
 If you are interested in learning more about git commands you can check out the list below and refer to [git documentation](https://git-scm.com/docs).<br />
+
+<a name="Other-Commands"></a>
 
 ## **Other Commands:** <br /> <br />
 + **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.<br>
@@ -355,10 +380,14 @@ If you are interested in learning more about git commands you can check out the 
 + **[git write-tree](https://git-scm.com/docs/git-write-tree)** ~ Create a tree object from the current index.<br>
 ***e.g:*** `git write-tree --missing-ok` *to create a tree object from the current index.*<br>
 
+<a name="Contributors"></a>
+
 ### Contributors:
 ![GitHub Logo](https://github.com/EstebanMqz.png?size=30) &nbsp; [EstebanMqz](https://github.com/EstebanMqz) 
 
 *Contributions are appreciated!* </a>:incoming_envelope: <br />
+
+<a name="References"></a>
 
 ### References:
 **1.** [Git](https://git-scm.com) <br> 
