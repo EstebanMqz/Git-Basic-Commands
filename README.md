@@ -72,7 +72,7 @@ The most popular ones are MAC OS and Linux, but Windows users can also use the [
 ---
 <a name="Git-Commands"/>
 
-# **Git Commands** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
+# **Git Basic Commands** &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)<br>
 The following is a list of common git commands based on the [Git Documentation](https://git-scm.com/docs).<br>
 ***Note:*** *if you don't understand a term, check out the definitons section below.*
 <br/> 
@@ -105,7 +105,7 @@ The following is a list of common git commands based on the [Git Documentation](
 |[24. ls](https://linux.die.net/man/1/git-ls-files)|<ol style="list-style-type:none;"><li>ls <li>ls -la|<ol style="list-style-type:none;"><li>**List subfolders** in ***dir***. <li>**List subfolders** in ***dir*** with *hidden files*.|
 |[25. rm](https://git-scm.com/docs/git-rm)|<ol style="list-style-type:none;"><li>git rm `<file>`<li>rm `<file>`|<ol style="list-style-type:none;"><li>**Remove file** from ***git tracking*** & ***local***.<li>**Remove file** from ***local*** *only*.
 |[26. mv](https://git-scm.com/docs/git-mv)|<ol style="list-style-type:none;"><li>git mv `<file.ext>` `<new-filename.ext>`<li> git mv `<file.ext>` ~/`<home>`/`<dir.1>`/`<subdir.>`|<ol style="list-style-type:none;"><li>**Rename file** with the same ***extension***.<li>**Move file** from dir.1 to subdir. (inside dir.1)
-|[27. mkdir](https://linux.die.net/man/1/mkdir)|<ol style="list-style-type:none;"><li>git mkdir ~/`<home>`/`<dir.>`/`<subdir.>/<new_dir.>`|<ol style="list-style-type:none;"><li>**Create dir.** ***in path***.
+|[27. mkdir](https://linux.die.net/man/1/mkdir)|<ol style="list-style-type:none;"><li>mkdir ~/`<home>`/`<dir.>`/`<subdir.>/<new_dir.>`|<ol style="list-style-type:none;"><li>**Create dir.** ***in path***.
 |[28. remote](https://git-scm.com/docs/git-remote)|<ol style="list-style-type:none;"><li>git remote<li> git remote -v<LI> git remote rename `<old-name> <new-name>`<li>git remote add `<URL>`|<ol style="list-style-type:none;"><li>**List** ***remote*** *branches*.<li>**List** ***remote*** *branches* with *URL*.<LI>**Rename** ***remote***.<li>**Connection** with ***repo*** with *URL*.|
 |[29. gitk](https://linux.die.net/man/1/gitk)|<ol style="list-style-type:none;"><li> gitk<li> gitk HEAD...FETCH_HEAD|<ol style="list-style-type:none;"><li>**Show Git GUI** for ***commits***.<li> **Show Git GUI** for ***all users*** since last push.
 <br>
