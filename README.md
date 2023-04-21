@@ -409,12 +409,13 @@ If you are interested in learning more about git commands you can check out the 
 <br><br><br>
 
 ##### *Made with*:&emsp;[![VSCode-Badge](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)<br>
-Check out my settings [vs.json]( 
+*Check out my current sync VS keybindings, extensions, and settings!*<br>
 
+On path: `echo $($(git rev-parse);pwd)`<br>
+`/c/Users/<user-name>/AppData/Roaming/Code/User`
+[vs.json](github.com/EstebanMqz/Git-Basic-Commands/vs.json) files→ *(in) subdirectory* <br><br>
 
 ##### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         Enjoyed the guide? <a href="https://saythanks.io/to/EstebanMqz" target="_blank"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" align="center" alt="Say Thanks!"></a>:smiley:
-
-<br>
 
 
 
