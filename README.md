@@ -413,7 +413,7 @@ If you are interested in learning more about git commands you can check out the 
 
 On path: `echo $($(git rev-parse);pwd)`<br>
 `/c/Users/<user-name>/AppData/Roaming/Code/User`
-[vs.json](github.com/EstebanMqz/Git-Basic-Commands/vs.json) files→ *(in) subdirectory* <br><br>
+[vs.json](https://github.com/EstebanMqz/Git-Basic-Commands/tree/main/VS.json) files→ *(in) subdirectory* <br><br>
 
 ##### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         Enjoyed the guide? <a href="https://saythanks.io/to/EstebanMqz" target="_blank"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" align="center" alt="Say Thanks!"></a>:smiley:
 
