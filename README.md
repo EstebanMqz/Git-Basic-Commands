@@ -405,17 +405,27 @@ If you are interested in learning more about git commands you can check out the 
 **2.** [*Linux Man*](https://git-scm.com) <br>
 **3.** [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
 **4.** **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*. *Chacon,S and Straub, B. (2022).*<br>
-**5.** [Github Render](https://github.com/joeyespo/grip) README.md→html→pdf *(local)*
+
+<br>
+
+*To preview Github README.md uncommited files: [Github Render](https://github.com/joeyespo/grip) Convert local README.md → html → pdf (optional).*
+
+--- 
+
+If you have any questions or comments, please feel free to send me a message here: &nbsp; [![Gmail-Badge](https://img.shields.io/badge/Gmail-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:emarquez1895@gmail)
+<br><br>
+
+##### *Made with*:&emsp;[![VSCode-Badge](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)<br><br>
+
+*Check out my current sync VS keybindings, extensions, and settings here!* → [vs.json](https://github.com/EstebanMqz/Git-Basic-Commands/tree/main/VS.json)<br><br>
+
+on roaming path: `C:/<user-name>/AppData/Roaming/Code/User` <br>
+`git init & echo $($(git rev-parse);pwd)`&nbsp; *to: &nbsp; retrieve path*
+
 <br><br><br>
 
-##### *Made with*:&emsp;[![VSCode-Badge](https://img.shields.io/badge/VSCode-007ACC?style=flat-square&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)<br>
-*Check out my current sync VS keybindings, extensions, and settings!*<br>
 
-On path: `echo $($(git rev-parse);pwd)`<br>
-`/c/Users/<user-name>/AppData/Roaming/Code/User`
-[vs.json](https://github.com/EstebanMqz/Git-Basic-Commands/tree/main/VS.json) files→ *(in) subdirectory* <br><br>
-
-##### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         Enjoyed the guide? <a href="https://saythanks.io/to/EstebanMqz" target="_blank"><img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" align="center" alt="Say Thanks!"></a>:smiley:
+##### &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         Enjoyed the guide? <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg" align="center" alt="Say Thanks!"></a>:smiley:
 
 
 
