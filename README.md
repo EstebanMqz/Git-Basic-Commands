@@ -1,4 +1,10 @@
-# *Description*:
+
+# *Description*: 
+
+<div align="right">  
+
+<i> Now as a Gist: </i> [![Gist](https://img.shields.io/badge/Github-Gist-010b38?style=square&logo=github&logoColor=black)](https://gist.github.com/EstebanMqz/328df6ab4df06bf886ff417800949da0)
+</div>
 
 *Introduction*: <br>
 *Github is an open-source code platform that allows us to collaborate with others developers through [Git](https://git-scm.com/downloads), the most popular *decentralized VCS (Version Control System)*,* *although, there are other VCS like [Subversion](https://subversion.apache.org) for a more *centralized* approach.* 
@@ -406,7 +412,7 @@ If you are interested in learning more about git commands you can check out the 
 **2.** [*Linux Man*](https://git-scm.com) <br>
 **3.** [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
 **4.** **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*. *Chacon,S and Straub, B. (2022).*<br>
-**5.** [(Github) Render](https://github.com/joeyespo/grip) *(Command 30.)*
+**5.** [Github Flavored Markdown Render-Preview](https://github.com/joeyespo/grip) *(Command 30.)*
 
 
 ---
@@ -421,18 +427,18 @@ If you are interested in learning more about git commands you can check out the 
 <font size="3"> <left>
 <font color= 'blue'>
 
-### Contributors: 
-![GitHub Logo](https://github.com/EstebanMqz.png?size=30) &nbsp; [EstebanMqz](https://github.com/EstebanMqz) </a>:incoming_envelope: <br />
+<Details> <Summary>
 
-<br>
-<font size="4">  <center>
+![Contact](https://img.shields.io/badge/Author's_Contact-Financial_Eng._Esteban_Márquez-black?style=square&logo=github&logoColor=black) </Summary>
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*<u> Contact: </u>*
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) &nbsp; &nbsp; [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) &nbsp; &nbsp; [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) &nbsp; &nbsp; 
-[![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)
+[![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)</br>
 
 
-<br>
+ 
+![GitHub Logo](https://github.com/EstebanMqz.png?size=30) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
+</Details>
+ 
+ 
 
-<p align="right"> <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿Just  Thanks- Ok! -000000.svg" alt="Thanks"> </a>
+ 
+<p align="right"> :incoming_envelope: <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿Just  Thanks- Ok! -000000.svg" alt="Thanks"> </a>
