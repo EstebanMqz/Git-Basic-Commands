@@ -17,15 +17,19 @@ The most popular ones are MAC OS and Linux, but Windows users can also use the [
 --- 
 
 #### **Table of Contents**
-* [Github Contributions](#Github-Contributions)
-  * [Fork vs Clone](#Fork-vs-Clone)
-    * [Contributions without permissions](#Contributions-without-permissions)
-    * [Contributions with permissions](#Contributions-with-permissions)
-* [Git Commands](#Git-Commands)
-    * [Definitions](#Definitions)
-* [Other Commands](#Other-Commands)
-    * [Contributors](#Contributors)
-    * [References](#References)
++ [*Description*:](#description)
+      + [**Table of Contents**](#table-of-contents)
++ [**Github Contributions**  ](#github-contributions--)
+  + [Fork vs Clone:](#fork-vs-clone)
+    + [***Contributions without permissions***:](#contributions-without-permissions)
+    + [***Contributions with permissions***:](#contributions-with-permissions)
++ [**Git Basic Commands** ](#git-basic-commands-)
+    + [**Installation Required**:](#installation-required)
+    + [**Visualizations**:](#Visualizations)
+    + [**Definitions**:](#definitions)
+  + [**Other Commands:**  ](#other-commands--)
+      + [References:](#references)
+      + [Collaborations:](#collaborations)
 
 
 <a name="Github-Contributions"/>
@@ -116,19 +120,39 @@ The following is a list of common git commands based on the [Git Documentation](
 |[28. remote](https://git-scm.com/docs/git-remote)|<ol style="list-style-type:none;"><li>git remote<li> git remote -v<LI> git remote rename `<old-name> <new-name>`<li>git remote add `<URL>`|<ol style="list-style-type:none;"><li>**List** ***remote*** *branches*.<li>**List** ***remote*** *branches* with *URL*.<LI>**Rename** ***remote***.<li>**Connection** with ***repo*** with *URL*.|
 |[29. gitk](https://linux.die.net/man/1/gitk)|<ol style="list-style-type:none;"><li> gitk<li> gitk HEAD...FETCH_HEAD|<ol style="list-style-type:none;"><li>**Show Git GUI** for ***commits***.<li> **Show Git GUI** for ***all users*** since last push.
 ### **Installation Required**:
+<a name="Installation-Required"/></a>
 |Basic|Command|Description|
-|---|---|---|
-|[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2*** |
-```git
-!pip install grip
+|---|---|---| 
+<u>**Installation with:**</u> [pip](https://pip.pypa.io/en/stable/installation/)/[conda](https://docs.conda.io/projects/conda/en/stable/) | <ol style="list-style-type:none;"><li> !pip install `<pkg>`<li>%pip install `<pkg>`<li>!conda install -c conda-forge `<pkg>`| <ol style="list-style-type:none;"><li> pkg installation in ***local driver***.<li> Installation ***isolated*** from *pkgs/users* (**venv setup**).<li> ;uInstallation in **conda** (from  ≈ ***22k pkgs***).| 
+|[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***
+|
+
+<a name="Definitions"></a>
+
+#### *Git History Visualization (web)*:
+1. Download *(bash.script)* in repository.
+2. Move the githistory.sh file to a directory in your PATH manually or with commands (see)
+3. Execute the following command in *dir* *(see 23. cd)*:
+
+```bash
+./githistory.sh
+Enter the username: 'username'
+Enter the repository name: 'repository'
+Enter the branch name: 'branch'
+Enter the file name: 'file'
 ```
-<br>
+
+*Example:* 
+
+[![githistory](https://img.shields.io/badge/githistory-.sh-black?style=square&logo=github&logoColor=black)](https://github.githistory.xyz/EstebanMqz/Git-Basic-Commands/blob/origin/README.md)
+
+---
 
 ***Note***: Branches should be called by their names even if they weren't specified (*see 14. branch*). <br> 
 *Tip:* `<main>` is the default name for remote repositories as `<master>` is for local. <br>
 
----
-<a name="Definitions"></a>
+
+<a name="Definitions"/></a>
 
 ### **Definitions**:
 + **Origin**: Primary ***working dir. of remote*** repositories by ***default***.<br>
@@ -147,7 +171,7 @@ The following is a list of common git commands based on the [Git Documentation](
 
 If you are interested in learning more about git commands you can check out the list below and refer to [git documentation](https://git-scm.com/docs).<br />
 
-<a name="Other-Commands"></a>
+<a name="Other-Commands"/></a>
 
 ## **Other Commands:** <br /> <br />
 + **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.<br>
