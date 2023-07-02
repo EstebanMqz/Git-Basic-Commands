@@ -1,9 +1,9 @@
-
 # *Description*: 
 
 <div align="right">  
 
-<i> Now as a Gist: </i> [![Gist](https://img.shields.io/badge/Github-Gist-010b38?style=square&logo=github&logoColor=black)](https://gist.github.com/EstebanMqz/328df6ab4df06bf886ff417800949da0)
+[![Gist](https://img.shields.io/badge/Github-Gist-010b38?style=square&logo=github&logoColor=black)](https://gist.github.com/EstebanMqz/328df6ab4df06bf886ff417800949da0)
+
 </div>
 
 *Introduction*: <br>
@@ -15,22 +15,20 @@ While not so user friendly, using the **terminal** allows us to use *more* comma
 The most popular ones are MAC OS and Linux, but Windows users can also use the [Gitbash](https://gitforwindows.org) emulator provided by Git with its download.<br><br>
 
 --- 
-
-#### **Table of Contents**
+#### **Table of Contents**: 
 + [*Description*:](#description)
-      + [**Table of Contents**](#table-of-contents)
+      + [**Table of Contents**:](#table-of-contents)
 + [**Github Contributions**  ](#github-contributions--)
   + [Fork vs Clone:](#fork-vs-clone)
     + [***Contributions without permissions***:](#contributions-without-permissions)
     + [***Contributions with permissions***:](#contributions-with-permissions)
 + [**Git Basic Commands** ](#git-basic-commands-)
     + [**Installation Required**:](#installation-required)
-    + [**Visualizations**:](#Visualizations)
+      + [*Git History Visualization (web)*:](#git-history-visualization-web)
     + [**Definitions**:](#definitions)
   + [**Other Commands:**  ](#other-commands--)
       + [References:](#references)
       + [Collaborations:](#collaborations)
-
 
 <a name="Github-Contributions"/>
 
@@ -127,7 +125,7 @@ The following is a list of common git commands based on the [Git Documentation](
 |[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***
 |
 
-<a name="Definitions"></a>
+<a name="History Visualization"/></a>
 
 #### *Git History Visualization (web)*:
 1. Download *(bash.script)* in repository.
@@ -437,6 +435,7 @@ If you are interested in learning more about git commands you can check out the 
 **3.** [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
 **4.** **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*. *Chacon,S and Straub, B. (2022).*<br>
 **5.** [Github Flavored Markdown Render-Preview](https://github.com/joeyespo/grip) *(Command 30.)*
+**6.** [githistory.xyz](https://githistory.xyz)
 
 
 ---
