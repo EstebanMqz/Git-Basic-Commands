@@ -16,10 +16,10 @@ While not so user friendly, using the **terminal** allows us to use *more* comma
 The most popular ones are MAC OS and Linux, but Windows users can also use the [Gitbash](https://gitforwindows.org) emulator provided by Git with its download.<br><br>
 
 
-<a name="table of contents"/>
+<a name="table of contents"/> 
 
 ---
-#### **Table of Contents**: 
+#### **Table of Contents**:
 + [*Description:*](#description)
 + [*Table of Contents:*](#table-of-contents)
 + [***Fork vs Clone:***](#fork-vs-clone)
@@ -123,7 +123,7 @@ The following is a list of common git commands based on the [Git Documentation](
 |[28. remote](https://git-scm.com/docs/git-remote)|<ol style="list-style-type:none;"><li>git remote<li> git remote -v<LI> git remote rename `<old-name> <new-name>`<li>git remote add `<URL>`|<ol style="list-style-type:none;"><li>**List** ***remote*** *branches*.<li>**List** ***remote*** *branches* with *URL*.<LI>**Rename** ***remote***.<li>**Connection** with ***repo*** with *URL*.|
 |[29. gitk](https://linux.die.net/man/1/gitk)|<ol style="list-style-type:none;"><li> gitk<li> gitk HEAD...FETCH_HEAD|<ol style="list-style-type:none;"><li>**Show Git GUI** for ***commits***.<li> **Show Git GUI** for ***all users*** since last push.
 
-### **Third-party pkgs**:
+### **Third-party pkgs / tools**:
 
 <a name="Third-party-pkgs"></a>
 
@@ -131,11 +131,12 @@ Examples of third-party pkgs installation and usage is illustrated are illustrat
 
 |Basic|Command|Description|
 |---|---|---| 
-<u>**Installation with:**</u> [pip](https://pip.pypa.io/en/stable/installation/)/[conda](https://docs.conda.io/projects/conda/en/stable/) | <ol style="list-style-type:none;"><li> !pip install `<pkg>`<li>%pip install `<pkg>`<li>!conda install -c conda-forge `<pkg>`| <ol style="list-style-type:none;"><li> pkg installation in ***local driver***.<li> Installation ***isolated*** from *pkgs/users* (**venv setup**).<li> ;uInstallation in **conda** (from  ≈ ***22k pkgs***).| 
+<u>**Installation with:**</u> [pip](https://pip.pypa.io/en/stable/installation/)/[conda](https://anaconda.org/anaconda/repo/files) | <ol style="list-style-type:none;"><li> !pip install `<pkg>`<li>%pip install `<pkg>`<li>!conda install -c conda-forge `<pkg>`| <ol style="list-style-type:none;"><li> pkg installation in ***local driver***.<li> Installation ***isolated*** from *pkgs/users* (**venv setup**).<li>Installation in **conda** (≈ *22k pkgs*).| 
 |[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li>!pip install grip <li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>Install grip <li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***|
 
 
-#### **githistory.xyz:** *web visualization* <br> 
+#### **Githistory.xyz:** 
+*githistory web visualization* <br> 
 
 <a name="githistory.xyz"></a>
 
@@ -159,6 +160,7 @@ Enter the file name: 'file'
 </div>
 
 <a name="Definitions"/></a>
+<br>
 
 ### **Definitions**:
 + **Origin**: Primary ***working dir. of remote*** repositories by ***default***.<br>
@@ -173,12 +175,12 @@ Enter the file name: 'file'
 *Tip:* `<main>` is the default name for remote repositories as `<master>` is for local. <br>
 
 *See Also*: <br>
-[Glossary](https://linux.die.net/man/7/gitglossary)<br>
+[Glossary](https://linux.die.net/man/7/gitglossary)<br><br>
 
 
 <a name="Other-Commands"/></a>
 
-## **Other Commands:** <br /> <br />
+## **Other Commands:** <br /> 
 + **[git am](https://git-scm.com/docs/git-am)** ~ Splits patches from a mailbox into commit msg, author and patches to apply them to branch.<br>
 ***e.g:*** `git am --keep-cr --signoff < a_file.patch` *to apply patch as commit.*<br>
 + **[git apply](https://git-scm.com/docs/git-apply)** ~ Apply a patch to files and add them to the index.<br>
@@ -436,31 +438,42 @@ Enter the file name: 'file'
 <br>
 
 <font size="1"> <i> <b> <left>
-#### References:
+#### References:</i>
 +  [Git](https://git-scm.com) <br> 
 +  [*Linux Man*](https://git-scm.com) <br>
 +  [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
 +  **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*<br>
   
-##### Third-party pkgs:
+##### <i> Third-party pkgs:</i>
 + [Grip](https://github.com/joeyespo/grip) <br>
 + [githistory.xyz](https://githistory.xyz)
 
 
 ---
-Collaborations:
+Collaborations (web):
 
-<font size="2"> <i> <b> <left>
+[![VS-Code-Web](https://img.shields.io/badge/VS_Code%20Web-010b38?style=flat-square&logo=visual-studio-code&logoColor=266fff)](https://vscode.dev) 
 
-[![VS-Code-Web](https://img.shields.io/badge/VS_Code%20Web-010b38?style=flat-square&logo=visual-studio-code&logoColor=266fff)](https://vscode.dev/github/EstebanMqz/Git-Basic-Commands)
+<font size="1.5"> <i> <b> <left>
 
-<p align="right"> :incoming_envelope: <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿Just  Thanks- Ok! -000000.svg" alt="Thanks"> </a>
+For quick changes proposed the web you can follow these steps:
+1. Fork repo.
+2. Open `vscode.dev` and select `Open Repository`
+3. Paste the forked repo `URL` or select it manually. 
+4. Make changes, stage, commit and create a pull request.
+
+Or you can use the `Codespaces` feature:
+
+[![Codespaces-Badge](https://img.shields.io/badge/CodeSpaces-2b2a27?style=flat&square&logo=github&logoColor=black)](https://github.com/codespaces)
+
+<br>
+
+<p align="right"> :incoming_envelope: <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿PR or thanks - Ok!  -000000.svg" alt="Thanks"> </a>
 
 </font>
-<font size="3"> <left>
-<font color= 'blue'>
+<font size="1"> <left>
 
-<Details> <Summary>
+<Details> <Summary> Click to expand:
 
 ![Contact](https://img.shields.io/badge/Author's_Contact-Financial_Eng._Esteban_Márquez-black?style=square&logo=github&logoColor=black) </Summary>
 
