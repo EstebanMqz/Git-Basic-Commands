@@ -1,4 +1,5 @@
 # *Description*: 
+<a name="description"/>
 
 <div align="right">  
 
@@ -14,34 +15,38 @@ While not so user friendly, using the **terminal** allows us to use *more* comma
 *options, arguments or objects and to chain several commands successively* on ***unix-like*** systems. <br>
 The most popular ones are MAC OS and Linux, but Windows users can also use the [Gitbash](https://gitforwindows.org) emulator provided by Git with its download.<br><br>
 
---- 
+
+<a name="table of contents"/>
+
+---
 #### **Table of Contents**: 
-+ [*Description*:](#description)
-      + [**Table of Contents**:](#table-of-contents)
-+ [**Github Contributions**  ](#github-contributions--)
-  + [Fork vs Clone:](#fork-vs-clone)
-    + [***Contributions without permissions***:](#contributions-without-permissions)
-    + [***Contributions with permissions***:](#contributions-with-permissions)
-+ [**Git Basic Commands** ](#git-basic-commands-)
-    + [**Installation Required**:](#installation-required)
-      + [*Git History Visualization (web)*:](#git-history-visualization-web)
-    + [**Definitions**:](#definitions)
-  + [**Other Commands:**  ](#other-commands--)
-      + [References:](#references)
-      + [Collaborations:](#collaborations)
-
-<a name="Github-Contributions"/>
-
-# **Github Contributions** <p align="right"> [![GitHub-Badge](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com)
-
-<a name="Fork-vs-Clone"/>
++ [*Description:*](#description)
++ [*Table of Contents:*](#table-of-contents)
++ [***Fork vs Clone:***](#fork-vs-clone)
+  + [***Contributions without permissions:***](#contributions-without-permissions)
+  + [***Contributions with permissions:***](#contributions-with-permissions)
++ [**<u>Git Basic Commands:</u>**](#contributions-with-permissions)
+  + [*Third-party-pkgs:*](#third-party-pkgs)
+    + [*Git History Visualization (web):*](#third-party-pkgs)
+  + [*Definitions*:](#definitions)
++ [<u>**Other Commands:**</u>](#definitions)
++ [*References:*](#references)  
+---
 
 ## Fork vs Clone:  
 
--	***Fork***: Merge with original repo is possible with a pull request.
+<a name="Fork-vs-Clone"/>
 
+<div align="right"> 
+
+[![GitHub-Badge](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com)
+
+
+</div>
+
+-	***Fork***: Merge with original repo is possible with a pull request.
 -	***Clone***: Merge with original repo is only achieved by pushing to fork and then a pull request.
----
+
 
 <a name="Contributions-without-permissions"/>
 
@@ -117,20 +122,24 @@ The following is a list of common git commands based on the [Git Documentation](
 |[27. mkdir](https://linux.die.net/man/1/mkdir)|<ol style="list-style-type:none;"><li>mkdir ~/`<home>`/`<dir.>`/`<subdir.>/<new_dir.>`|<ol style="list-style-type:none;"><li>**Create dir.** ***in path***.
 |[28. remote](https://git-scm.com/docs/git-remote)|<ol style="list-style-type:none;"><li>git remote<li> git remote -v<LI> git remote rename `<old-name> <new-name>`<li>git remote add `<URL>`|<ol style="list-style-type:none;"><li>**List** ***remote*** *branches*.<li>**List** ***remote*** *branches* with *URL*.<LI>**Rename** ***remote***.<li>**Connection** with ***repo*** with *URL*.|
 |[29. gitk](https://linux.die.net/man/1/gitk)|<ol style="list-style-type:none;"><li> gitk<li> gitk HEAD...FETCH_HEAD|<ol style="list-style-type:none;"><li>**Show Git GUI** for ***commits***.<li> **Show Git GUI** for ***all users*** since last push.
-### **Installation Required**:
-<a name="Installation-Required"/></a>
+
+### **Third-party pkgs**:
+
+<a name="Third-party-pkgs"></a>
+
+Examples of third-party pkgs installation and usage is illustrated are illustrated by the following:
+
 |Basic|Command|Description|
 |---|---|---| 
 <u>**Installation with:**</u> [pip](https://pip.pypa.io/en/stable/installation/)/[conda](https://docs.conda.io/projects/conda/en/stable/) | <ol style="list-style-type:none;"><li> !pip install `<pkg>`<li>%pip install `<pkg>`<li>!conda install -c conda-forge `<pkg>`| <ol style="list-style-type:none;"><li> pkg installation in ***local driver***.<li> Installation ***isolated*** from *pkgs/users* (**venv setup**).<li> ;uInstallation in **conda** (from  ≈ ***22k pkgs***).| 
-|[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***
-|
+|[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li>!pip install grip <li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>Install grip <li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***|
 
-<a name="History Visualization"/></a>
 
-#### *Git History Visualization (web)*:
-1. Download *(bash.script)* in repository.
-2. Move the githistory.sh file to a directory in your PATH manually or with commands (see)
-3. Execute the following command in *dir* *(see 23. cd)*:
+#### **githistory.xyz:** *web visualization* <br> 
+
+<a name="githistory.xyz"></a>
+
+[bash.script](https://github.com/EstebanMqz/Git-Basic-Commands/blob/main/githistory.sh) can be executed in `pwd` to display <i>githistory.xyz</i>:
 
 ```bash
 ./githistory.sh
@@ -139,16 +148,15 @@ Enter the repository name: 'repository'
 Enter the branch name: 'branch'
 Enter the file name: 'file'
 ```
+<br>
 
-*Example:* 
+[![githistory](https://img.shields.io/badge/githistory-.sh-black?style=square&logo=github&logoColor=black)](https://github.githistory.xyz/torvalds/linux/blob/master/Makefile)
 
-[![githistory](https://img.shields.io/badge/githistory-.sh-black?style=square&logo=github&logoColor=black)](https://github.githistory.xyz/EstebanMqz/Git-Basic-Commands/blob/origin/README.md)
+<div align="center"> 
 
----
+<img src="images/githistory.gif" width="1047" height="447">
 
-***Note***: Branches should be called by their names even if they weren't specified (*see 14. branch*). <br> 
-*Tip:* `<main>` is the default name for remote repositories as `<master>` is for local. <br>
-
+</div>
 
 <a name="Definitions"/></a>
 
@@ -159,15 +167,14 @@ Enter the file name: 'file'
 + **Feature**: Feature represents a ***branch of developments*** in progress with their descriptions. <br>
 + **Rebase**: Rebase is a ***rewritten branch*** from another but keep in mind it is *not a good practice to rewrite public commits history (remote repositories)*.<br> *Creating a backup branch is a good idea. This would allow us to perform a hard reset if the resulting rebase is unexpected*. <br>
 + **Base**: It is a commit ***id, branch, tag***, or a relative ***reference*** to HEAD *(e.g. HEAD~3)*.
-<br>
+<br><br>
+
+***Note***: Branches should be called by their names even if they weren't specified (*see 14. branch*). <br> 
+*Tip:* `<main>` is the default name for remote repositories as `<master>` is for local. <br>
 
 *See Also*: <br>
 [Glossary](https://linux.die.net/man/7/gitglossary)<br>
 
----
-<br>
-
-If you are interested in learning more about git commands you can check out the list below and refer to [git documentation](https://git-scm.com/docs).<br />
 
 <a name="Other-Commands"/></a>
 
@@ -430,21 +437,24 @@ If you are interested in learning more about git commands you can check out the 
 
 <font size="1"> <i> <b> <left>
 #### References:
-**1.** [Git](https://git-scm.com) <br> 
-**2.** [*Linux Man*](https://git-scm.com) <br>
-**3.** [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
-**4.** **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*. *Chacon,S and Straub, B. (2022).*<br>
-**5.** [Github Flavored Markdown Render-Preview](https://github.com/joeyespo/grip) *(Command 30.)*
-**6.** [githistory.xyz](https://githistory.xyz)
++  [Git](https://git-scm.com) <br> 
++  [*Linux Man*](https://git-scm.com) <br>
++  [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
++  **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*<br>
+  
+##### Third-party pkgs:
++ [Grip](https://github.com/joeyespo/grip) <br>
++ [githistory.xyz](https://githistory.xyz)
 
 
 ---
-<br>
+Collaborations:
+
 <font size="2"> <i> <b> <left>
 
-#### Collaborations:
-[![Codespaces-Badge](https://img.shields.io/badge/CodeSpaces-2b2a27?style=flat&square&logo=github&logoColor=black)](https://github.com/codespaces)
-[![Visual Studio Code Remote Advanced Containers](https://img.shields.io/badge/Remote%20Advanced%20Containers-010b38?style=flat-square&logo=visual-studio-code&logoColor=266fff)](https://code.visualstudio.com/docs/remote/containers-advanced) [![Microsoft Visual Studio Live Share](https://img.shields.io/badge/Live%20Share-010b38?style=flat-square&logo=visual-studio-code&logoColor=266fff)](https://visualstudio.microsoft.com/services/live-share/) [![Google Colab](https://img.shields.io/badge/Google%20Colab-black?style=flat-square&logo=google-colab&logoColor=#ff990a)](https://colab.research.google.com/notebooks/intro.ipynb)
+[![VS-Code-Web](https://img.shields.io/badge/VS_Code%20Web-010b38?style=flat-square&logo=visual-studio-code&logoColor=266fff)](https://vscode.dev/github/EstebanMqz/Git-Basic-Commands)
+
+<p align="right"> :incoming_envelope: <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿Just  Thanks- Ok! -000000.svg" alt="Thanks"> </a>
 
 </font>
 <font size="3"> <left>
@@ -456,12 +466,10 @@ If you are interested in learning more about git commands you can check out the 
 
 [![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)</br>
 
-
- 
 ![GitHub Logo](https://github.com/EstebanMqz.png?size=30) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
 </Details>
  
  
 
  
-<p align="right"> :incoming_envelope: <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿Just  Thanks- Ok! -000000.svg" alt="Thanks"> </a>
+
