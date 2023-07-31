@@ -1,6 +1,5 @@
 #!/bin/bash
-# githistory: bash script to display the githistory of a git remote file in browser (accesible as an example through README.md for: https://github.com/torvalds/linux/tree/master/kernel)
-
+# githistory: bash script to display githistory of a git remote in browser. 
 read -p "Enter the username: " username
 read -p "Enter the repository name: " repository
 read -p "Enter the branch: " branch
@@ -11,16 +10,7 @@ echo opening $username, $repository, $branch, $filename githistory in the browse
 githistory() {
     git web--browse "https://github.githistory.xyz/$username/$repository/blob/$branch/$filename"
 }
-
-githistory "$@"
-
+githistory "$@" #Pass all args. to function.
 exit 0
 
-
-
-
-
-
-
-
-
+#Call: ./githistory.sh

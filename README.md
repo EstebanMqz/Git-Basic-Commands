@@ -450,7 +450,7 @@ Enter the file name: 'file'
 
 
 ---
-Collaborations (web):
+Collaborations:
 
 [![VS-Code-Web](https://img.shields.io/badge/VS_Code%20Web-010b38?style=flat-square&logo=visual-studio-code&logoColor=266fff)](https://vscode.dev) 
 
