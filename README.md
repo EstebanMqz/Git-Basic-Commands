@@ -456,7 +456,7 @@ Collaborations:
 
 <font size="1.5"> <i> <b> <left>
 
-For quick changes proposed the web you can follow these steps:
+For quick changes proposed via web you can follow these steps:
 1. Fork repo.
 2. Open `vscode.dev` and select `Open Repository`
 3. Paste the forked repo `URL` or select it manually. 
