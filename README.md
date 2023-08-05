@@ -135,20 +135,19 @@ Examples of third-party pkgs installation and usage is illustrated are illustrat
 |[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li>!pip install grip <li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>Install grip <li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***|
 
 
-#### **Githistory.xyz:** 
-*githistory web visualization* <br> 
+#### **Githistory.xyz Web Visualization:** 
+*githistory * <br> 
 
 <a name="githistory.xyz"></a>
 
 [bash.script](https://github.com/EstebanMqz/Git-Basic-Commands/blob/main/githistory.sh) can be executed in `pwd` to display <i>githistory.xyz</i>:
 
 ```bash
-./githistory.sh
-Enter the username: 'username'
-Enter the repository name: 'repository'
-Enter the branch name: 'branch'
-Enter the file name: 'file'
+./githistory.sh <username> <repo> <branch> <file>
 ```
+<b>Note:</b> <i>Its usage is intended to view &/or extract changes by users in specific files with web scraping techniques & libraries.<br>
+See more here:</i> [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [Scrapy](https://docs.scrapy.org/en/latest/) for `Python` or [Puppeteer](https://pptr.dev/) $\&$ [Cheerio](https://cheerio.js.org/) in `JavaScript` </i>.
+
 <br>
 
 [![githistory](https://img.shields.io/badge/githistory-.sh-black?style=square&logo=github&logoColor=black)](https://github.githistory.xyz/torvalds/linux/blob/master/Makefile)
