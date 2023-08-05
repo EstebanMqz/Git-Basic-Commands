@@ -146,7 +146,7 @@ Examples of third-party pkgs installation and usage is illustrated are illustrat
 ./githistory.sh <username> <repo> <branch> <file>
 ```
 <b>Note:</b> <i>Its usage is intended to view &/or extract changes by users in specific files with web scraping techniques & libraries.<br>
-See more here:</i> [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [Scrapy](https://docs.scrapy.org/en/latest/) for `Python` or [Puppeteer](https://pptr.dev/) $\&$ [Cheerio](https://cheerio.js.org/) in `JavaScript` </i>.
+See more here:</i> [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/), [Scrapy](https://docs.scrapy.org/en/latest/) for `Python` or [Puppeteer](https://pptr.dev/) & [Cheerio](https://cheerio.js.org/) in `JavaScript` </i>.
 
 <br>
 
