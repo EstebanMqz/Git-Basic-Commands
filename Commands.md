@@ -1,4 +1,25 @@
-# *Description*: 
+<center><h1><font color = "red">Git Commands</font></h1></center>
+
+<a name="table of contents"/> 
+
+---
+#### **Table of Contents**:
++ [*Description:*](#description)
++ [**Table of Contents:**](#table-of-contents)
++ [*Fork vs Clone:*](#fork-vs-clone)
+  + [*Contributions without permissions:*](#contributions-without-permissions)
+  + [*Contributions with permissions:*](#contributions-with-permissions)
++ [**<u>Git Basic Commands:</u>**](#contributions-with-permissions)
+  + [*Third-party-pkgs:*](#definitions)
+    + [*Git History Visualization (web):*](#definitions)
+  + [*Definitions*:](#definitions)
++ [<u>**Other Commands:**</u>](#definitions)
++ [*Collaborations:*](#references)
++ [*References:*](#references)
++ [*Contact*:](#contact)  
+---
+
+# *Description*:  
 <a name="description"/>
 
 <div align="right">  
@@ -8,39 +29,19 @@
 </div>
 
 *Introduction*: <br>
-*Github is an open-source code platform that allows us to collaborate with others developers through [Git](https://git-scm.com/downloads), the most popular *decentralized VCS (Version Control System)*,* *although, there are other VCS like [Subversion](https://subversion.apache.org) for a more *centralized* approach.* 
+*Github is an open-source code platform that allows us to collaborate with others developers through [Git](https://git-scm.com/downloads), the most popular *decentralized VCS (Version Control System)*,* *although, there are other VCS like [Subversion](https://subversion.apache.org) for a more *centralized* approach. 
 
-This is ***quick guide to collaborate*** on Github through Git but mainly as a reference for ***basic/other commands*** which are meant to be used on a git terminal. <br>
-While not so user friendly, using the **terminal** allows us to use *more* commands, to *modify* their *syntax* and to provide them with many different <br> 
-*options, arguments or objects and to chain several commands successively* on ***unix-like*** systems. <br>
+This repository aims to be a ***complete guide of Git & 3°-party-tools*** that users should consider carrying on a daily basis, made by human-like systems completely in order to avoid misinformation and substantial errors. It pretends to be a reference for most ***git commands***, illustrating some of the most used options & args. for basic/other commands meant to be used on a git terminal. <br>
+While not so user friendly, using **terminals** allows us to use *more* commands, to *modify* their *syntax* and to provide commands with many different <br> 
+*options, arguments or objects, as well as to chain several commands successively or even make scripts written in git through ***unix-like*** systems. <br>
 The most popular ones are MAC OS and Linux, but Windows users can also use the [Gitbash](https://gitforwindows.org) emulator provided by Git with its download.<br><br>
 
 
-<a name="table of contents"/> 
-
----
-#### **Table of Contents**:
-+ [*Description:*](#description)
-+ [*Table of Contents:*](#table-of-contents)
-+ [***Fork vs Clone:***](#fork-vs-clone)
-  + [***Contributions without permissions:***](#contributions-without-permissions)
-  + [***Contributions with permissions:***](#contributions-with-permissions)
-+ [**<u>Git Basic Commands:</u>**](#contributions-with-permissions)
-  + [*Third-party-pkgs:*](#third-party-pkgs)
-    + [*Git History Visualization (web):*](#third-party-pkgs)
-  + [*Definitions*:](#definitions)
-+ [<u>**Other Commands:**</u>](#definitions)
-+ [*References:*](#references)  
----
-
 ## Fork vs Clone:  
-
 <a name="Fork-vs-Clone"/>
-
 <div align="right"> 
 
 [![GitHub-Badge](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com)
-
 
 </div>
 
@@ -135,12 +136,9 @@ Examples of third-party pkgs installation and usage is illustrated are illustrat
 |[30. grip ](https://github.com/joeyespo/grip)|<ol style="list-style-type:none;"><li>!pip install grip <li> grip --export <li> grip --export `<file-name>`.ipynb &nbsp;`<file-name>`.html <li> grip --export `<name>`.ipynb &nbsp;`<name>`.pdf|<ol style="list-style-type:none;"><li>Install grip <li>**Export** ***README.md*** to ***README.html***.<li> **Export** ***file.ipynb*** to ***file.html***. <li> **Export** ***file.ext*** to ***file.ext2***|
 
 
-#### **Githistory.xyz Web Visualization:** 
-*githistory * <br> 
+#### **Githistory.xyz Web Visualization:** <br> 
 
-<a name="githistory.xyz"></a>
-
-[bash.script](https://github.com/EstebanMqz/Git-Basic-Commands/blob/main/githistory.sh) can be executed in `pwd` to display <i>githistory.xyz</i>:
+[bash.script](https://github.com/EstebanMqz/Git-Commands/blob/main/githistory.sh) can be executed in `pwd` to display <i>githistory.xyz</i>:
 
 ```bash
 ./githistory.sh <username> <repo> <branch> <file>
@@ -437,11 +435,13 @@ See more here:</i> [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup
 <br>
 
 <font size="1"> <i> <b> <left>
-#### References:</i>
-+  [Git](https://git-scm.com) <br> 
-+  [*Linux Man*](https://git-scm.com) <br>
-+  [*Ubuntu Manuals*](manpages.ubuntu.com) <br>
-+  **Official Git Pro** *[ebook](https://git-scm.com/book/en/v2)*<br>
+<a name="references"></a>
+## References
+
++  [<b>Git</b>](https://git-scm.com) <br> 
++  [<i>Linux Man</i>](https://git-scm.com) <br>
++  [<b>Ubuntu Manuals</b>](manpages.ubuntu.com) <br>
++  <b>Official Git Pro</b> [ebook](https://git-scm.com/book/en/v2)<br>
   
 ##### <i> Third-party pkgs:</i>
 + [Grip](https://github.com/joeyespo/grip) <br>
