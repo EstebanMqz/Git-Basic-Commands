@@ -469,17 +469,18 @@ Or you can use the `Codespaces` feature:
 
 <p align="right"> :incoming_envelope: <a href="https://saythanks.io/to/EstebanMqz" target="_blank"> <img src="https://img.shields.io/badge/%20¿PR or thanks - Ok!  -000000.svg" alt="Thanks"> </a>
 
-</font>
-<font size="1"> <left>
 
-<Details> <Summary> Click to expand:
+<br><br>
 
 ![Contact](https://img.shields.io/badge/Author's_Contact-Financial_Eng._Esteban_Márquez-black?style=square&logo=github&logoColor=black) </Summary>
 
-[![Website](https://img.shields.io/badge/Website-ffffff?style=square&logo=opera&logoColor=red)](https://estebanmqz.com) [![LinkedIn](https://img.shields.io/badge/LinkedIn-041a80?style=square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/esteban-m65381722210212839/) [![Portfolio](https://img.shields.io/badge/Github-Portfolio-010b38?style=square&logo=github&logoColor=black)](https://estebanmqz.github.io/Portfolio/) [![E-mail](https://img.shields.io/badge/Business-Mail-052ce6?style=square&logo=mail&logoColor=white)](mailto:esteban@esteban.com)</br>
+[<img width="40px" src="https://img.icons8.com/ios/50/0e55b3/resume-website.png">](https://estebanmqz.github.io/EstebanMqz/html/Resume.html)
+[<img width="40px" src="https://img.icons8.com/?size=512&id=MR3dZdlA53te&format=png">](https://www.linkedin.com/in/esteban-m-653817205/)
+[<img width="35px" src="https://img.icons8.com/color/452/whatsapp--v1.png">](https://tinyurl.com/2y86e2wa)
+[<img width="40px" src="https://img.icons8.com/color/452/gmail-new.png">](mailto:emarquez1895@gmail.com)
+[<img width="40px" src="https://cdn3d.iconscout.com/3d/free/thumb/free-github-6343501-5220956.png?f=webp">](https://github.com/EstebanMqz?tab=repositories)
+[<img width="40px" src="https://img.icons8.com/color/452/gitlab.png">](https://gitlab.com/EstebanMqz)
 
-![GitHub Logo](https://github.com/EstebanMqz.png?size=30) [![Github](https://img.shields.io/badge/Github-000000?style=square&logo=github&logoColor=white)](https://github.com/EstebanMqz)
-</Details>
  
  
 
