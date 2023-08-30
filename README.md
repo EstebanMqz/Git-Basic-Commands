@@ -16,7 +16,7 @@
 + [<u>**Other Commands:**</u>](#definitions)
 + [*Collaborations:*](#references)
 + [*References:*](#references)
-+ [*Contact*:](#contact)  
++ [*Contact*:](#references)  
 ---
 
 # *Description*:  
@@ -471,6 +471,8 @@ Or you can use the `Codespaces` feature:
 
 
 <br><br>
+
+<a name="references"></a>
 
 ![Contact](https://img.shields.io/badge/Author's_Contact-Financial_Eng._Esteban_Márquez-black?style=square&logo=github&logoColor=black) </Summary>
 
